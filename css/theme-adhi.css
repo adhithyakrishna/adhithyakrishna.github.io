@@ -1,0 +1,337 @@
+:root{
+    
+    --MAIN-TEXT-color:#323232; /* Color of text by default */
+    --MAIN-TITLES-TEXT-color: #5e5e5e; /* Color of titles h2-h3-h4-h5 */
+    --MAIN-LINK-color:#1C90F3; /* Color of links */
+    --MAIN-LINK-HOVER-color:#167ad0; /* Color of hovered links */
+    --MAIN-ANCHOR-color: #1C90F3; /* color of anchors on titles */
+
+    --MENU-HEADER-BG-color:#000000; /* Background color of menu header */
+    --MENU-HEADER-BORDER-color:#ffffff; /*Color of menu header border */ 
+
+    --MENU-SEARCH-BG-color:#ffffff; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BOX-color: #33a1ff; /* Override search field border color */
+    --MENU-SEARCH-BOX-ICONS-color: #000000; /* Override search field icons color */
+
+    --MENU-SECTIONS-ACTIVE-BG-color:#20272b; /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color:#212121; /* Background color of other sections */
+    --MENU-SECTIONS-LINK-color: #ccc; /* Color of links in menu */
+    --MENU-SECTIONS-LINK-HOVER-color: #e6e6e6;  /* Color of links in menu, when hovered */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #000; /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff; /* Color of background for the active category (only) */
+
+    --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
+    --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
+    
+}
+
+body {
+    color: var(--MAIN-TEXT-color) !important;
+}
+
+textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+h2, h3, h4, h5 {
+    color: var(--MAIN-TITLES-TEXT-color) !important;
+}
+
+a {
+    color: var(--MAIN-LINK-color);
+}
+
+.anchor {
+    color: var(--MAIN-ANCHOR-color);
+}
+
+a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+}
+
+#sidebar ul li.visited > a .read-icon {
+	color: var(--MENU-VISITED-color);
+}
+
+#body a.highlight:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    background-color: var(--MAIN-LINK-HOVER-color);
+}
+#sidebar {
+	background-color: var(--MENU-SECTIONS-BG-color);
+}
+#sidebar #header-wrapper {
+    background: var(--MENU-HEADER-BG-color);
+    color: var(--MENU-SEARCH-BOX-color);
+    border-color: var(--MENU-HEADER-BORDER-color);
+}
+#sidebar .searchbox {
+	border-color: var(--MENU-SEARCH-BOX-color);
+    background: var(--MENU-SEARCH-BG-color);
+}
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+    background: var(--MENU-SECTIONS-ACTIVE-BG-color);
+}
+#sidebar .searchbox * {
+    color: var(--MENU-SEARCH-BOX-ICONS-color);
+}
+
+#sidebar a {
+    color: #ffffff;
+}
+
+#sidebar a:hover {
+    color: var(--MENU-SECTIONS-LINK-HOVER-color);
+}
+
+#sidebar ul li.active > a {
+    background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
+}
+
+#sidebar hr {
+    border-color: var(--MENU-SECTION-HR-color);
+}
+
+#body .tags a.tag-link {
+    background-color: var(--MENU-HEADER-BG-color);    
+}
+
+#body .tags a.tag-link:before {
+    border-right-color: var(--MENU-HEADER-BG-color);
+}
+
+.highlightable.portfolio
+{
+	padding: 1rem 2rem !important;
+}
+
+.skillSet {
+    background-position: -130px -5px !important;
+}
+
+.educationContent {
+    position: relative;
+    background-position: 0px 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-decoration: none solid rgb(51, 51, 51);
+    text-size-adjust: 100%;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 207.5px 116.5px;
+    transform-origin: 207.5px 116.5px;
+    caret-color: rgb(51, 51, 51);
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border-top: 0px none rgb(51, 51, 51);
+    border-right: 0px none rgb(51, 51, 51);
+    border-bottom: 0px none rgb(51, 51, 51);
+    border-left: 2px solid rgb(229, 229, 229);
+    font: normal normal normal normal 16px / 22.8571px Poppins, sans-serif;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 40px 5% 20px 5%;
+}
+
+#yearHolder {
+    font-size: 18px;
+    line-height: 70px;
+}
+
+.triangle {
+    width: 0px;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    margin-left: -9px;
+}
+
+.portfolio.h2.educationHeader {
+    min-height: 25px;
+    line-height: 1.2;
+}
+
+.contentEducationHolder {
+    color: rgba(0, 0, 0, 0.72);
+    box-sizing: border-box;
+    padding: 20px 10% 0px 0px;
+    font-size: 26px;
+    height: 70px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    width: 83%;
+    width: calc(100% - 76px);
+}
+
+.educationExperienceHolder {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 0 10% 0 10%;
+}
+
+.eduHeaderHolder {
+    margin: 15px 0 60px 0;
+}
+
+#educationHeader {
+    margin-left: -35px;
+    overflow: hidden;
+    max-height: 76px;
+}
+
+#eduSpritImg {
+    width: 100%;
+    background-image: url(/images/sprite.jpg);
+    border-radius: 48px;
+    border: 2px solid rgba(0, 0, 0, 0.64);
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: 5.738739px -3.459459px;
+    background-size: 554.018018px auto;
+    width: 70px;
+    height: 70px;
+}
+
+#eduSpritImgHolder {
+    display: inline-block;
+    width: 76px;
+    overflow: hidden;
+    float: left;
+}
+
+.experienceInfo, .educationInfo {
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+.centerContent {
+	margin: 45px 10px;
+}
+
+.holderAboutInfo {
+    border-bottom: 0.5px solid #ededed;
+	overflow: hidden;
+	min-height: 450px;
+	text-align: center;
+}
+
+.ancillarySkills {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0px 20px 0px;
+    padding: 0 10%;
+}
+
+.technologyName {
+    font-size: 20px;
+}
+
+.technologyHolder {
+    border: 2px solid #ddd;
+    /* box-shadow: -1px 7px 20px 1px #ddd; */
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 20px 10px;
+    margin: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* border-bottom: 3px solid transparent; */
+    background: white;
+}
+
+.technology {
+    width: 35%;
+    text-align: center;
+    display: inline-block;
+}
+
+.portfolio img {
+	margin : 0px !important;
+}
+
+.portfolio p {
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin: 0.5rem 0;
+	text-align: left;
+}
+
+.portfolio h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.portfolio h2 {
+	font-size: 1.5rem;
+	margin: 0.5rem 0 0.5rem 0;
+}
+
+
+.educationHeader:after {
+    position: absolute;
+    top: 45px;
+    left: -7px;
+    box-sizing: border-box;
+    color: transparent;
+    content: '""';
+    display: block;
+    height: 12px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-size-adjust: 100%;
+    width: 12px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 5px 5px;
+    transform-origin: 5px 5px;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-radius: 50px;
+    font: normal normal 500 normal 16px / 17.6px Poppins, sans-serif;
+    list-style: none outside none;
+    /* margin: 6px 13px 0px -7%; */
+    outline: rgb(51, 51, 51) none 0px;
+    }
+
+	.holderEducationExperienceInfo {
+		background: url(/images/dotted.png) bottom repeat-x;
+		background-attachment: fixed;
+		padding: 0px 0px 50px 0px;
+		border-bottom: 0.5px solid #ededed;
+		text-align: center;
+	}
+	
+@media only screen and (max-width: 1024px)  {
+	.experienceInfo, .educationInfo {
+		width : 100%;
+		margin : 16px 0px;
+	}
+	.educationExperienceHolder {
+		padding: 0 0% 0 15%;
+	}
+	.technology {
+		width : 100%;
+	}
+}
