@@ -24,7 +24,7 @@ function initLunr() {
                 this.field('tags', {
 		    boost: 10
                 });
-                this.field("description", {
+                this.field("content", {
 		    boost: 5
                 });
 				
@@ -71,7 +71,7 @@ $( document ).ready(function() {
         /* renderItem displays individual search results */
         renderItem: function(item, term) {
             var numContextWords = 2;
-            var text = item.description.match(
+            var text = item.content.match(
                 "(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}" +
                     term+"(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}");
             item.context = text;

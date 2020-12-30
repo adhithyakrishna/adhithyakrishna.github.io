@@ -68,8 +68,14 @@ li.dd-item.articles {
 	margin : 5px 0px !important;
 }
 
-.fa-angle-double-right:before {
-	padding: 2px 5px !important;
+.fa-journal-whills:before {
+	padding-right: 5px !important;
+}
+
+#footer {
+    padding: 2rem 1rem;
+	font-size: 17px;
+	background-color: var(--MENU-SECTIONS-BG-color);
 }
 
 p {
