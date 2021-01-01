@@ -1,0 +1,83 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+# - name: Professional
+#   filter: "professional"
+- name: Academic
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+# - name: Kubernetes
+#   logo: /images/sections/projects/kubernetes.png
+#   role: Contributor
+#   timeline: "March 2018 - Present"
+#   repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+#   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+#   summary: Production-Grade Container Scheduling and Management.
+#   tags: ["professional", "kubernetes", "cloud"]
+
+# - name: Tensorflow
+#   logo: /images/sections/projects/tensorflow.png
+#   role: Developer
+#   timeline: "Jun 2018 - Present"
+#   repo: https://github.com/tensorflow/tensorflow
+#   #url: ""
+#   summary: An Open Source Machine Learning Framework for Everyone.
+#   tags: ["professional", "machine-learning","academic"]
+
+- name: BettingLite-Dapp
+  role: Developer
+  timeline: "Oct 2020 - Dec 2020"
+  url: "https://github.com/adhithyakrishna/BlockChainProject"
+  summary: A blockchain project aimed at providing a decentralized and anonymous betting platform.
+  tags: ["academic","iot"]
+
+- name: Saavn-nodejs
+  # logo: /images/sections/projects/no-code.png
+  role: Developer
+  timeline: "Oct 2020 - Dec 2020"
+  # repo: 
+  url: "https://github.com/adhithyakrishna/saavn-nodejs"
+  summary: A node js wrapper for the jio saavn api, the motive of this project is to create a fullstack music streaming website.
+  tags: ["hobby", "fun"]
+
+- name: Twitter-Analyzer
+  # logo: /images/sections/projects/toha.png
+  role: Developer
+  timeline: "Jan 2020 - May 2020"
+  # repo: https://github.com/hossainemruz/toha
+  url : "https://github.com/adhithyakrishna/Twitter-Analyzer"
+  summary: Project to analyze rhetoric of prominent public leader's tweets based on multilingual search, sentiment analysis and topic analysis.
+  tags: ["academic","Twitter"]
+
+- name: Distributed-Key-value-storage
+  # logo: /images/sections/projects/toha.png
+  role: Developer
+  timeline: "Jan 2020 - May 2020"
+  # repo: https://github.com/hossainemruz/toha
+  url : "https://github.com/adhithyakrishna/Amazon-dynamo-based-key-value-storage"
+  summary: This project focuses on implementing a distributed key-value storage system, performing data replictation, data partitioning and automatic failure recovery.
+  tags: ["academic","Distributed systems"]
+
+- name: Distributed-messenger-application
+  # logo: /images/sections/projects/toha.png
+  role: Developer
+  timeline: "Jan 2020 - May 2020"
+  # repo: https://github.com/hossainemruz/toha
+  url : "https://github.com/adhithyakrishna/Distributed-messenger-application"
+  summary: This project implements a distributed messenger application, providing Fifo and total ordering guarantees, supporting concurrent storage and retrieval of messages.
+  tags: ["academic","Twitter"]

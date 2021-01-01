@@ -1,0 +1,83 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Incoming Software Engineer
+# your company information
+company:
+  name: Cerner Corporation
+  url: "https://www.cerner.com/"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/adhithya_resume.pdf"
+
+# a summary about you
+summary: 'I am a computer science student with an infinite zeal to design and build scalable web applications. 
+
+I previously worked as a software development engineer at  <a href="https://www.skava.com/" title="Skava systems">
+Skava</a>, an awesome e-Commerce platform. 
+
+I have completed my masters degree in Computer and Information Sciences from University at Buffalo and would be joining Cerner Corporation in Fall 2021.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "akrishna.cse21@gmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/adhithyakrishna"
+
+# - name: Stackoverflow
+#   icon: "fab fa-stack-overflow"
+#   url: "#"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/adhithya-krishna/"
+
+# - name: Twitter
+#   icon: "fab fa-twitter"
+#   url: "#"
+
+# - name: Facebook
+#   icon: "fab fa-facebook"
+#   url: "#"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Leader
+  percentage: 100
+  color: blue
+- name: Team Worker
+  percentage: 100
+  color: yellow
+# - name: Communication
+#   percentage: 100
+#   color: pink
+# - name: Passion to learn
+#   percentage: 100
+#   color: green
+- name: Fast Learner
+  percentage: 100
+  color: sky
+- name: Problem Solver
+  percentage: 100
+  color: orange
+# you can also provide color code instead of pre-defined color name
+# - name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
+# - name: Example 2
+#   percentage: 65
+#   color: "#8b8383"

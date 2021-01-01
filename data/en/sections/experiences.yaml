@@ -1,0 +1,63 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Skava systems
+    url: "https://www.skava.com/"
+    location: Coimbatore, India
+    # company overview
+    overview: Skava Systems is an e-commerce SaaS company aimed at providing the best in class microservices based modular platform for businesses across the world. 
+  positions:
+  - designation: Software Engineer Intern
+    start: Jan 2016
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: Jun 2019
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Engineered a configuration based modular web scraper using Node.JS and Cheerio to dynamically retrieve product information of up to 5 websites and store them into a MongoDB database.
+    - Created a complete wedding registry website using HTML5, CSS3, and jQuery.
+
+  - designation: Software Engineer
+    start: Jun 2016
+    end: Jun 2019
+    responsibilities:
+    - Achieved a 12% increase in product search accuracy by engineering migration tool using the Spring framework to index around 2 million product data from the MySQL database into Apache Solr.
+    - Planned and employed a test-driven development approach to develop restful microservices using Spring framework, MySQL database, OAuth2 for authentication and, and Apache Solr for caching.
+    - Reduced page load time by 50% from 4 seconds to 2 seconds by designing and developing jQuery plugins.
+
+- company:
+    name: Cerner Coporation
+    url: "https://www.cerner.com/"
+    location: Kansas city, MO
+    overview: Cerner is the leading U.S. supplier of health care information technology solutions that optimize clinical and financial outcomes.
+  positions:
+  - designation: Incoming Software Engineer
+    start: February 2021
+    # end: May 2017
+    responsibilities:
+    - Help the company revolutionise the healthcare space.
+    # - Read lots of examples.
+    # - See lots of example videos.
+
+# - company:
+#     name: Intern Counting Company (ICC).
+#     url: "https://www.intern.com"
+#     location: Intern Land
+#     overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
+#   positions:
+#   - designation: Intern
+#     start: Jun 2015
+#     end: Jan 2016
+#     responsibilities:
+#     - Count lost of interns.
+#     - Count more interns.
+#     - Count me as an intern.
