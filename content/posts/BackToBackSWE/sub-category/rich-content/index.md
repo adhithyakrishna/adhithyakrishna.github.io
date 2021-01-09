@@ -7,7 +7,7 @@ menu:
   sidebar:
     name: Rich Content
     identifier: rich-content
-    parent: sub-category
+    parent: lessons
     weight: 10
 ---
 

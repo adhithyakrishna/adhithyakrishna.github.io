@@ -34,17 +34,17 @@ experiences:
     - Planned and employed a test-driven development approach to develop restful microservices using Spring framework, MySQL database, OAuth2 for authentication and, and Apache Solr for caching.
     - Reduced page load time by 50% from 4 seconds to 2 seconds by designing and developing jQuery plugins.
 
-- company:
-    name: Cerner Coporation
-    url: "https://www.cerner.com/"
-    location: Kansas city, MO
-    overview: Cerner is the leading U.S. supplier of health care information technology solutions that optimize clinical and financial outcomes.
-  positions:
-  - designation: Incoming Software Engineer
-    start: February 2021
+# - company:
+#     name: Cerner Coporation
+#     url: "https://www.cerner.com/"
+#     location: Kansas city, MO
+#     overview: Cerner is the leading U.S. supplier of health care information technology solutions that optimize clinical and financial outcomes.
+#   positions:
+#   - designation: Incoming Software Engineer
+#     start: February 2021
     # end: May 2017
-    responsibilities:
-    - Help the company revolutionise the healthcare space.
+    # responsibilities:
+    # - Help the company revolutionise the healthcare space.
     # - Read lots of examples.
     # - See lots of example videos.
 
