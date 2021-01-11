@@ -188,7 +188,7 @@ sections:
     type: project
     # description: "I am a computer science student with an infinite zeal to design and build scalable web applications. I previously worked as a software development engineer at Skava Systems. I have completed my masters degree in Computer and Information Sciences from University at Buffalo and would be joining Cerner Corporation in Fall 2021."
     header: 
-      title: Git projects
+      title: Projects
       hlcolor: "#3F51B5"
       color: 
       fontSize: 32
