@@ -50,7 +50,7 @@ footer:
 sections:
   - bgcolor: primary
     type: card
-    description: "I am a computer science student with an infinite zeal to design and build scalable web applications. I previously worked as a software development engineer at Skava Systems. I have completed my masters degree in Computer and Information Sciences from University at Buffalo and would be joining Cerner Corporation in Fall 2021."
+    description: "I am a computer science student with an infinite zeal to design and build scalable web applications. I previously worked as a software development engineer at Skava Systems. I have completed my masters degree in Computer and Information Sciences from University at Buffalo."
     header: 
       title: About me
       hlcolor: "#5468d2"
@@ -109,14 +109,14 @@ sections:
       width: 340
     body:      
       cards:
-        - company: Cerner Corporation
-          subtitlePosition: left
-          position: Academy Software Engineer
-          timestamp : Fall 2021
-          image: images/section/building.png
-          imagePosition: left
-          description :
-            - point: Incoming software engineer joining the company in Fall 2021.
+        # - company: Cerner Corporation
+        #   subtitlePosition: left
+        #   position: Academy Software Engineer
+        #   timestamp : Fall 2021
+        #   image: images/section/building.png
+        #   imagePosition: left
+        #   description :
+        #     - point: Incoming software engineer joining the company in Fall 2021.
         - company: Skava systems
           subtitlePosition: left
           position: Software Development Engineer
@@ -151,25 +151,25 @@ sections:
           imagePosition: left
           subtitle: Java
           description:
-            - point: Have hands on experience in java datastructures and work experience as a java developer.
+            # - point: Have hands on experience in java datastructures and work experience as a java developer.
         - name: Golang
           image: images/section/go.png
           imagePosition: left
           description:
-            - point: Self-taught golang programmer
+            # - point: Self-taught golang programmer
           subtitle: Golang
         - name: Git
           image: images/section/git.png
           imagePosition: left
           subtitle: Git
           description:
-            - point: Have hands on experience in java datastructures and work experience as a java developer.
+            # - point: Have hands on experience in java datastructures and work experience as a java developer.
         - name: Javascript
           image: images/section/js.png
           imagePosition: left
           subtitle: Javascript
           description:
-            - point: Have hands on experience in java datastructures and work experience as a java developer.
+            # - point: Have hands on experience in java datastructures and work experience as a java developer.
   - bgcolor: primary
     type: project
     # description: "I am a computer science student with an infinite zeal to design and build scalable web applications. I previously worked as a software development engineer at Skava Systems. I have completed my masters degree in Computer and Information Sciences from University at Buffalo and would be joining Cerner Corporation in Fall 2021."
