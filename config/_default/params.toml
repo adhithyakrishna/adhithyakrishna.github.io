@@ -3,7 +3,7 @@ logoText = "Akrishna"
 logoType = "short" # long, short
 description = "The ZDoc theme for Hugo example site."
 
-themeOptions = ["light", "dark"]
+themeOptions = ["dark", "light"]
 
 useFaviconGenerator = true # https://www.favicon-generator.org/
 

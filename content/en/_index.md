@@ -5,17 +5,17 @@ date: 2020-01-26T04:15:05+09:00
 draft: false
 # updatesBanner: "Banner - &nbsp; [Hugo ZDoc theme](https://github.com/zzossig/hugo-theme-zdoc) &nbsp; just arrived"
 landing:
-  height: 500
-  image: favicon/android-icon-192x192.png
+  height: 450
+  image: images/section/joe.png
   title:
     - Adhithyakrishna
   text:
     # - This is Hugo Z Themes documentation site
   titleColor:
   textColor:
-  spaceBetweenTitleText: 25
+  spaceBetweenTitleText: 8
   buttons:
-    - link: resources/documents/Adhithya_resume.pdf
+    - link: documents/Adhithya_resume.pdf
       text: Download my Resume
       color: primary
   # backgroundImage: 
@@ -23,36 +23,22 @@ landing:
     # height: 600
 footer:
   sections:
-    - title: General
+    - title: Navigation
       links:
-        - title: Docs
-          link: https://gohugo.io/
-        - title: Learn
-          link: https://gohugo.io/
-        - title: Showcase
-          link: https://gohugo.io/
+        - title: Articles
+          link: /articles
         - title: Blog
-          link: https://gohugo.io/
-    - title: resources
+          link: /blog
+    - title: Links
       links:
         - title: GitHub
-          link: https://gohugo.io/
-        - title: Releases
-          link: https://gohugo.io/
-        - title: Spectrum
-          link: https://gohugo.io/
-        - title: Telemetry
-          link: https://gohugo.io/
-    - title: Features
+          link: https://github.com/adhithyakrishna/
+        - title: LinkedIn
+          link: https://www.linkedin.com/in/adhithya-krishna/
+    - title: Contact
       links:
-        - title: GitHub
-          link: https://gohugo.io/
-        - title: Releases
-          link: https://gohugo.io/
-        - title: Spectrum
-          link: https://gohugo.io/
-        - title: Telemetry
-          link: https://gohugo.io/
+        - title: Email
+          link: mailto:akrishna.cse21@gmail.com
   contents: 
     align: left
     applySinglePageCss: false
@@ -67,27 +53,27 @@ sections:
     description: "I am a computer science student with an infinite zeal to design and build scalable web applications. I previously worked as a software development engineer at Skava Systems. I have completed my masters degree in Computer and Information Sciences from University at Buffalo and would be joining Cerner Corporation in Fall 2021."
     header: 
       title: About me
-      hlcolor: "#3F51B5"
+      hlcolor: "#5468d2"
       color: 
       fontSize: 32
       width: 290
     cards:
-      - subtitle: Leader
-        subtitlePosition: center
-        # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue."
-        image: images/section/keyboard.png
-        color: white
+      # - subtitle: Leader
+      #   subtitlePosition: center
+      #   # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue."
+      #   image: images/section/keyboard.png
+      #   color: white
         # button: 
         #   name: Naver
         #   link: https://gohugo.io/
         #   size: large
         #   target: _blank
         #   color: 'white'
-        #   bgcolor: '#283593'
+        #   bgcolor: '#5468d2'
       - subtitle: Team Worker
         subtitlePosition: center
         # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
-        image: images/section/processor.png
+        image: images/section/team.png
         color: white
         # button: 
         #   name: Google
@@ -95,11 +81,11 @@ sections:
         #   size: large
         #   target: _blank
         #   color: 'white'
-        #   bgcolor: '#283593'
+        #   bgcolor: '#5468d2'
       - subtitle: Fast Learner
         subtitlePosition: center
         # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
-        image: images/section/root-server.png
+        image: images/section/skills.png
         color: white
         # button: 
         #   name: Yahoo
@@ -107,17 +93,17 @@ sections:
         #   size: large
         #   target: _blank
         #   color: 'white'
-        #   bgcolor: '#283593'
+        #   bgcolor: '#5468d2'
       - subtitle: Problem Solver
         subtitlePosition: center
-        image: images/section/root-server.png
+        image: images/section/problemsolver.png
         color: white
   - bgcolor: primary
     type: normal
     # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
     header:
       title: Work experience
-      hlcolor: "#3F51B5"
+      hlcolor: "#5468d2"
       color: 
       fontSize: 32
       width: 340
@@ -127,7 +113,7 @@ sections:
           subtitlePosition: left
           position: Academy Software Engineer
           timestamp : Fall 2021
-          image: images/section/root-server.png
+          image: images/section/building.png
           imagePosition: left
           description :
             - point: Incoming software engineer joining the company in Fall 2021.
@@ -135,7 +121,7 @@ sections:
           subtitlePosition: left
           position: Software Development Engineer
           timestamp : Jun 2016 - Jun 2019, Coimbatore, India 
-          image: images/section/root-server.png
+          image: images/section/building.png
           imagePosition: left
           description:
             - point: Achieved a 12% increase in product search accuracy by engineering migration tool using the Spring framework to index around 2 million product data from the MySQL database into Apache Solr.
@@ -145,7 +131,7 @@ sections:
           subtitlePosition: left
           position: Software Development Engineer Intern
           timestamp : Jan 2016 - Jun 2019, Coimbatore, India
-          image: images/section/root-server.png
+          image: images/section/building.png
           imagePosition: left
           description:
             - point: Engineered a configuration based modular web scraper using Node.JS and Cheerio to dynamically retrieve product information of up to 5 websites and store them into a MongoDB database.
@@ -154,32 +140,32 @@ sections:
     type: skills
     header:
       title: Skills
-      hlcolor: "#3F51B5"
+      hlcolor: "#5468d2"
       color: 
       fontSize: 32
       width: 340
     body:
       skills:
         - name:  Java
-          image: images/section/keyboard.png
+          image: images/section/java.png
           imagePosition: left
           subtitle: Java
           description:
             - point: Have hands on experience in java datastructures and work experience as a java developer.
         - name: Golang
-          image: images/section/keyboard.png
+          image: images/section/go.png
           imagePosition: left
           description:
             - point: Self-taught golang programmer
           subtitle: Golang
         - name: Git
-          image: images/section/keyboard.png
+          image: images/section/git.png
           imagePosition: left
           subtitle: Git
           description:
             - point: Have hands on experience in java datastructures and work experience as a java developer.
         - name: Javascript
-          image: images/section/keyboard.png
+          image: images/section/js.png
           imagePosition: left
           subtitle: Javascript
           description:
@@ -189,7 +175,7 @@ sections:
     # description: "I am a computer science student with an infinite zeal to design and build scalable web applications. I previously worked as a software development engineer at Skava Systems. I have completed my masters degree in Computer and Information Sciences from University at Buffalo and would be joining Cerner Corporation in Fall 2021."
     header: 
       title: Projects
-      hlcolor: "#3F51B5"
+      hlcolor: "#5468d2"
       color: 
       fontSize: 32
       width: 290
@@ -197,7 +183,7 @@ sections:
       - subtitle: BettingLite-Dapp
         subtitlePosition: center
         description: "A blockchain project aimed at providing a decentralized and anonymous betting platform."
-        image: images/section/keyboard.png
+        image: images/section/code.png
         color: white
         button: 
           name: Details
@@ -205,11 +191,11 @@ sections:
           size: large
           target: _blank
           color: 'white'
-          bgcolor: '#283593'
+          bgcolor: '#5468d2'
       - subtitle: Saavn-nodejs  
         subtitlePosition: center
         description: "A node js wrapper for the jio saavn api, the motive of this project is to create a fullstack music streaming website."
-        image: images/section/processor.png
+        image: images/section/code.png
         color: white
         button: 
           name: Details
@@ -217,11 +203,11 @@ sections:
           size: large
           target: _blank
           color: 'white'
-          bgcolor: '#283593'
+          bgcolor: '#5468d2'
       - subtitle: Twitter Analyzer
         subtitlePosition: center
         description: "Project to analyze rhetoric of prominent public leader’s tweets based on multilingual search, sentiment analysis and topic analysis."
-        image: images/section/root-server.png
+        image: images/section/code.png
         color: white
         button: 
           name: Details
@@ -229,11 +215,11 @@ sections:
           size: large
           target: _blank
           color: 'white'
-          bgcolor: '#283593'
+          bgcolor: '#5468d2'
       - subtitle: Distributed Key Value Storage
         subtitlePosition: center
         description: "This project focuses on implementing a distributed key-value storage system, performing data replictation, data partitioning and automatic failure recovery."
-        image: images/section/root-server.png
+        image: images/section/code.png
         color: white
         button: 
           name: Details
@@ -241,11 +227,11 @@ sections:
           size: large
           target: _blank
           color: 'white'
-          bgcolor: '#283593'
+          bgcolor: '#5468d2'
       - subtitle: Distributed Messenger Application
         subtitlePosition: center
         description: "This project implements a distributed messenger application, providing Fifo and total ordering guarantees, supporting concurrent storage and retrieval of messages."
-        image: images/section/root-server.png
+        image: images/section/code.png
         color: white
         button: 
           name: Details
@@ -253,5 +239,5 @@ sections:
           size: large
           target: _blank
           color: 'white'
-          bgcolor: '#283593'
+          bgcolor: '#5468d2'
 ---
