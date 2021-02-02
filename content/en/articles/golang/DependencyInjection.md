@@ -9,7 +9,7 @@ This post was inspired by an awesome tech talk by Florian Patan at GopherCon UK 
 
 My aim for this article is to dissect dependency injection into smaller chunks to understand how it works.
 
-
+The initial code for the project is given below. (main.go)
 ```Go
 package main
 
@@ -46,6 +46,9 @@ log 2021/02/01 16:44:03 main.go:15: Inside root
 
 The logger instance was generated in main.go file. Suppose we want to create a new router called home. Instead of creating a new instance of logger we can simply inject it into the router. This is where the dependency injection comes into the picture.
 
+We create a new package that handles the logic of /home route. The new package is **home package**. In the home.go file, we add the following code.
+
+## Dependency Injection 
 
 #### Step 1 : Create a Handler of type struct and initialise a logger variable of the type log.Logger
 
