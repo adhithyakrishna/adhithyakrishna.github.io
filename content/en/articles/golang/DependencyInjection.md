@@ -3,6 +3,7 @@ title: "Dependency injection in golang"
 description : "An article about dependency injection in golang"
 date: 2021-02-01T16:25:16-05:00
 draft: false
+weight: 5
 ---
 
 This post was inspired by an awesome tech talk by Florian Patan at GopherCon UK in 2018 where he goes over creating a goservice in 30 minutes. The interesting take away from the talk was the use of dependency injection to insert a logger instance into the handler.
