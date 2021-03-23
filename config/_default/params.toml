@@ -27,8 +27,8 @@ paginateWindow = 1
 taxoPaginate = 13
 taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 
-github = "https://github.com/zzossig/hugo-theme-zdoc"
-
+github = "https://github.com/adhithyakrishna"
+linkedin = "https://www.linkedin.com/in/adhithya-krishna/"
 # comment
 enableComment = false
 disqus_shortname = ""
