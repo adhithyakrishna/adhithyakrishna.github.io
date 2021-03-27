@@ -5,7 +5,13 @@
   weight = 1
 
 [[main]]
+  identifier = "notes"
+  name = "Notes"
+  url = "notes"
+  weight = 2
+
+[[main]]
   identifier = "blog"
   name = "Blog"
   url = "blog"
-  weight = 2
+  weight = 3
