@@ -10,7 +10,7 @@ This post was inspired by an awesome tech talk by Florian Patan at GopherCon UK 
 
 My aim for this article is to dissect dependency injection into smaller chunks to understand how it works.
 
-The initial code for the project is given below. (main.go)
+The initial code for the project is given below. (main.go) 
 ```Go
 package main
 
