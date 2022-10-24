@@ -1,1 +1,3 @@
 hugo new articles/golang/functiontypes.md --buildDrafts
+
+hugo new notes/k8s_for_absolute_beginners/introduction.md --buildDrafts
