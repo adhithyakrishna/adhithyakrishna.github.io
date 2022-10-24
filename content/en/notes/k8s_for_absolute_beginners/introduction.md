@@ -29,7 +29,7 @@ Docker (most popular container technology).
 3) Compatability checks had to be make during every component upgrade AKA matrix from hell.
 4) Onboarding a new developer / setting up a local instance was difficult.
 
-#### With docker
+##### With docker
 1) Each component can run in its own container with its own libraries and dependencies.
 2) Docker is compatible with any operating systems. 
 3) Onboarding a new developer / setting up a local instance is very easy.
@@ -72,12 +72,12 @@ For VMs, there is complete isolation. Since VM does not directly rely on underly
 Reference : https://www.vmware.com/topics/glossary/content/hypervisor.html?resource=cat-1023790256#cat-1023790256
 {{< /box >}}
 
-#### Image vs Containers:
+#### Image vs Containers
 
 An image is a package or a template that is used to create one or more containers.
 Containers are running instances of that image that are isolated and have their own **environments and set of processes.**
 
-#### Advantage of containers:
+#### Advantage of containers
 Traditonally, developers developed applications and hand it over to Ops team to deploy and manage it in production environments along with some instructions. If they hit an issue, they would have to work with developers to resolve it.
 
 With docker, major portion of this infrastructure setup is now in the hands of developers in form of Docker file. The instructions that were put to gether previously (handed off to the ops team) can now put together easily into a Dockerfile (to create an image for their application). The image can run on any container platform and is **guaranteed to run the same way everywhere**. Ops team can now use the image to deploy the application. Since OPS team are not modifying it, it continues to work the same when deployed in production.
