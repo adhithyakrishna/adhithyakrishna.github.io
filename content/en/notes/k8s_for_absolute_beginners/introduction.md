@@ -75,7 +75,7 @@ Reference : https://www.vmware.com/topics/glossary/content/hypervisor.html?resou
 #### Image vs Containers:
 
 An image is a package or a template that is used to create one or more containers.
-Containers are running instances of that image that are isolated and have their own ** environemnts and set of processes.**
+Containers are running instances of that image that are isolated and have their own **environments and set of processes.**
 
 #### Advantage of containers:
 Traditonally, developers developed applications and hand it over to Ops team to deploy and manage it in production environments along with some instructions. If they hit an issue, they would have to work with developers to resolve it.
