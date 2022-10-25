@@ -2,7 +2,7 @@
 title: "Introduction"
 date: 2022-10-23T15:35:28-07:00
 draft: false
-description : "Notes for kubernetes course"
+description : "Introduction to Kubernetes"
 meta_image: notes/k8s_for_absolute_beginners/k8s.png
 image: notes/k8s_for_absolute_beginners/k8s.png
 weight : 5
