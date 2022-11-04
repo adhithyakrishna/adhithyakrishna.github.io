@@ -11,8 +11,6 @@ weight : 25
 
 This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 
-This module is about different kubernetes cluster available.
-
 #### Replication controller
 1) Replication controller helps us run multiple instance of a pod in kubernetes cluster, thus providing high availability.
 2) Replication controller is capable of ensuring that the specified number of pods are running at all times.
