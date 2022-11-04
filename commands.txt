@@ -1,3 +1,5 @@
 hugo new articles/golang/functiontypes.md --buildDrafts
 
-hugo new notes/k8s_for_absolute_beginners/introduction.md --buildDrafts
+hugo new notes/k8s_for_absolute_beginners/yaml_introduction.md --buildDrafts
+
+hugo new notes/k8s_for_absolute_beginners/k8s_controllers.md --buildDrafts
