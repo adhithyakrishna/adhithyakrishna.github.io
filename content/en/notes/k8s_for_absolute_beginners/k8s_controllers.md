@@ -160,7 +160,7 @@ kubectl rollout history
 ```
 
 ##### Deployment Strategies
-The default deployment strategy is **Rollout**. There is another strategy called **Recreate** which as the name implies, deletes all the pods and recreates them bringing the entire service down while doing it. **Rollout strategy** on the other hand, takes doen the older version and brings back the newer version one by one. This way, the application never goes down and the upgrade is seamless.
+The default deployment strategy is **Rollout**. There is another strategy called **Recreate** which as the name implies, deletes all the pods and recreates them bringing the entire service down while doing it. **Rollout strategy** on the other hand, takes down the older version and brings back the newer version one by one. This way, the application never goes down and the upgrade is seamless.
 
 
 To update the image of the running deployment ```kubectl set image deployment/myapp-deployment nginx-container=nginx:1.12-perl``` command can be used.
