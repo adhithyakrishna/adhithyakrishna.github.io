@@ -94,7 +94,7 @@ Worker node has
 
 
 #### Kubectl (kube control)
-Tool used to deploy and manage applications on a kuberentes cluster
+Tool used to deploy and manage applications on a Kubernetes cluster
 1) Provide cluster information
 2) Get status of nodes in the cluster
 

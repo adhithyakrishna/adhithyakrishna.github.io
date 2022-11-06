@@ -2,7 +2,7 @@
 title: "Kubernetes controllers"
 date: 2022-11-03T23:45:59-07:00
 draft: false
-description : "Kuberentes controllers"
+description : "Kubernetes controllers"
 meta_image: notes/k8s_for_absolute_beginners/k8s.png
 image: notes/k8s_for_absolute_beginners/k8s.png
 weight : 25

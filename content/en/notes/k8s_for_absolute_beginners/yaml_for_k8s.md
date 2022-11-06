@@ -1,8 +1,8 @@
 ---
-title: "Yaml for kuberentes"
+title: "Yaml for Kubernetes"
 date: 2022-11-01T12:41:20-07:00
 draft: false
-description : "Yaml for kuberentes"
+description : "Yaml for Kubernetes"
 meta_image: notes/k8s_for_absolute_beginners/k8s.png
 image: notes/k8s_for_absolute_beginners/k8s.png
 weight : 20
@@ -13,7 +13,7 @@ This notes is for the course [Kuberenetes for absolute beginners](https://www.ud
 
 #### Kubernetes definition file
 
-A kuberentes definition file always contains 4 top level fields. These are required fields
+A Kubernetes definition file always contains 4 top level fields. These are required fields
 
 ```
 apiVersion:

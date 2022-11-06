@@ -1,8 +1,8 @@
 ---
-title: "Kuberentes services"
+title: "Kubernetes services"
 date: 2022-11-05T19:10:37-07:00
 draft: false
-description : "Kuberentes services"
+description : "Kubernetes services"
 meta_image: notes/k8s_for_absolute_beginners/k8s.png
 image: notes/k8s_for_absolute_beginners/k8s.png
 weight : 30
@@ -56,7 +56,7 @@ This service acts as a built in load balancer to distribute the load across diff
 
 {{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-30-11-52-59.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
 
-Kuberentes creates a service that can **_spans across all the nodes_** in the cluster and maps the target port to the same nodeport on all the nodes in the cluster, without having to do any additional configurations.
+Kubernetes creates a service that can **_spans across all the nodes_** in the cluster and maps the target port to the same nodeport on all the nodes in the cluster, without having to do any additional configurations.
 This way the application can be accessed using the IP of any node by using the same port number.
 
 To summarize – in ANY case whether it be a single pod in a single node, multiple pods on a single node, multiple pods on multiple nodes, the service is created exactly the same without having to do any additional steps during the service creation.
@@ -64,7 +64,7 @@ When PODs are removed or added the service is automatically updated making it hi
 
 #### ClusterIP
 
-ClusterIP provides a single interface to **access pods in a group**. A service created for backend pods will help group all the backend pods and provide a single interface for the other pods to access this service, allowing to easily and effectively deploy a microservices based application on a kuberentes cluster. Similarly, creating additional services for database layer allows the backend pods to access the database layer through this sergice. 
+ClusterIP provides a single interface to **access pods in a group**. A service created for backend pods will help group all the backend pods and provide a single interface for the other pods to access this service, allowing to easily and effectively deploy a microservices based application on a Kubernetes cluster. Similarly, creating additional services for database layer allows the backend pods to access the database layer through this sergice. 
 
 Each service gets an IP and name assigned to it inside the cluster and **that is the name that should be used** by the other pods to acccess the service. This type of service is known as ClusterIP. ClusterIP is the default type in kubernetes configuration. If we did not specify the type, ClusterIP would be assigned by default.
 
