@@ -4,5 +4,7 @@ hugo new notes/k8s_for_absolute_beginners/yaml_introduction.md --buildDrafts
 
 hugo new notes/k8s_for_absolute_beginners/k8s_services.md --buildDrafts
 
+hugo new notes/java_design_patterns/introduction.md --buildDrafts
+
 
 {{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-24-13-13-10.png title="K8s Nodes" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
