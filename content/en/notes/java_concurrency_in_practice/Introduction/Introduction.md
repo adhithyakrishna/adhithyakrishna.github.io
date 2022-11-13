@@ -1,11 +1,12 @@
 ---
 title: "Ch01 - Introduction"
 date: 2020-02-28T10:08:56+09:00
-description: 
+description: Contains Notes for the book Java concurrency in practice - https://jcip.net/) 
 draft: false
 collapsible: false
-enableToc: false
-weight: 1
+meta_image: notes/java_concurrency_in_practice/jcip.png
+image: notes/java_concurrency_in_practice/jcip.png
+weight: 5
 ---
 
 {{< featuredImage >}}
