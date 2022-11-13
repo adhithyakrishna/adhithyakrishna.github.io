@@ -13,6 +13,7 @@ weight: 10
 
 Contains Notes for the book Java concurrency in practice - https://jcip.net/)
 
+#### Benefits of threads
 Proper utilization of thread can
 1) Reduce development and maintenance cost.
 2) Improve the performance of complex applications.
