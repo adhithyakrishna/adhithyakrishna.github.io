@@ -2,6 +2,6 @@
 Running a single program at a time was inefficient use of expensive and scarce computer resources
 Processes Processes are isolated, independently executing programs to which operating system allocates resources such as memory, file handles and security credentials.
 Processes communicate with one another through a variety of coarse-grained communication mechanism: sockets, signal handlers, shared memory, semaphores and fils.</description></item><item><title>Ch02 - Benefits of Threads</title><link>https://adhithyakrishna.github.io/notes/java_concurrency_in_practice/introduction/benefits_of_threads/</link><pubDate>Sun, 13 Nov 2022 14:50:54 -0800</pubDate><guid>https://adhithyakrishna.github.io/notes/java_concurrency_in_practice/introduction/benefits_of_threads/</guid><description>Contains Notes for the book Java concurrency in practice - https://jcip.net/)
-Proper utilization of thread can
+Benefits of threads Proper utilization of thread can
 Reduce development and maintenance cost. Improve the performance of complex applications. Threads are useful in GUI applications for improving the responsiveness of the user interface. In server applications, threads help in improving the resource utilzation and throughput.
 Since the basic unit of scheduling is the thread. A single threaded program can run on at most one processor at a time.</description></item></channel></rss>
