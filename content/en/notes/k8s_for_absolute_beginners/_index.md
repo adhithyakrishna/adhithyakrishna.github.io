@@ -4,6 +4,7 @@ description: "Contains notes for the udemy course - https://www.udemy.com/course
 date: 2021-02-01T21:23:38+00:00
 draft: false
 collapsible: true
+weight : 1
 ---
 
-Contains articles for the kubernetes course - https://www.udemy.com/course/learn-kubernetes/
+Contains Notes for the kubernetes course - https://www.udemy.com/course/learn-kubernetes/
