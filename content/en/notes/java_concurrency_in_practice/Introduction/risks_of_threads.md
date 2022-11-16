@@ -1,5 +1,5 @@
 ---
-title: "Ch03 - Risks_of_threads"
+title: "Ch03 - Risks of threads"
 date: 2022-11-16T11:51:25-08:00
 description: Contains Notes for the book Java concurrency in practice - https://jcip.net/) 
 draft: false
