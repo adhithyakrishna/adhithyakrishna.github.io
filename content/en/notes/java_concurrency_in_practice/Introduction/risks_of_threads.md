@@ -40,7 +40,7 @@ Two threads can call getNext and receive the same value since operations in mult
 
 The above unsafe sequence example illustrate the common concurrency hazard called ***race condition***.
 
-Since threads share the same memory address space and run concurrently, they can accecss or modify variables that other threads might be using.Convenience here is, it makes data sharing much easier compared to other inter-thread communication mechanisms. The risk here is, threads can be confused by having data change unexpectedly.
+Since threads share the same memory address space and run concurrently, they can access or modify variables that other threads might be using. Convenience here is, it makes data sharing much easier compared to other inter-thread communication mechanisms. The risk here is, threads can be confused by having data change unexpectedly.
 
 Allowing multiple threads to access and modify the same variables will introduce the element of non sequentiality into an otherwise sequential programming model.
 
