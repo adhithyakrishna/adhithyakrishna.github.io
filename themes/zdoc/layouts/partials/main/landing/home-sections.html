@@ -1,0 +1,19 @@
+{{ range .Params.sections }}
+  <section style="background-color: {{ .bgcolor }};">
+    <div class="divider">
+      <div class="lmr">
+        {{ if eq .type "card" }}
+          {{ partial "main/landing/section-card.html" . }}
+        {{ else if eq .type "normal" }}
+          {{ partial "main/landing/section-normal" . }}
+        {{ else if eq .type "skills" }}
+          {{ partial "main/landing/section-skills" . }}
+        {{else if eq .type "project" }}
+          {{ partial "main/landing/section-project" . }}
+        {{ else }}
+          {{ printf "%#v" "Not supported type" }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
