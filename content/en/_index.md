@@ -1,16 +1,14 @@
 ---
 title: Adhithyakrishna
-description: Hugo zzo, zdoc theme documentation home page
+description: A website to journal my learnings as a computer science engineer. 
 date: 2020-01-26T04:15:05+09:00
 draft: false
-# updatesBanner: "Banner - &nbsp; [Hugo ZDoc theme](https://github.com/zzossig/hugo-theme-zdoc) &nbsp; just arrived"
 landing:
   height: 450
   image: images/section/joe.png
   title:
     - Adhithyakrishna
   text:
-    # - This is Hugo Z Themes documentation site
   titleColor:
   textColor:
   spaceBetweenTitleText: 8
@@ -18,9 +16,6 @@ landing:
     - link: documents/Adhithya_resume.pdf
       text: Download my Resume
       color: primary
-  # backgroundImage: 
-    # src: images/landscape.jpg
-    # height: 600
 footer:
   sections:
     - title: Navigation
@@ -50,7 +45,7 @@ footer:
 sections:
   - bgcolor: primary
     type: card
-    description: "I am a computer science student with an infinite zeal to design and build scalable web applications. I previously worked as a software development engineer at Skava Systems. I have completed my masters degree in Computer and Information Sciences from University at Buffalo."
+    description: "I am currently working as a Software Engineer 2 at Nordstrom. I am a geek with an infinite zeal to design and build scalable web applications. I obtained my masters degree in Computer and Information Sciences from University at Buffalo."
     header: 
       title: About me
       hlcolor: "#5468d2"
@@ -58,49 +53,20 @@ sections:
       fontSize: 32
       width: 290
     cards:
-      # - subtitle: Leader
-      #   subtitlePosition: center
-      #   # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue."
-      #   image: images/section/keyboard.png
-      #   color: white
-        # button: 
-        #   name: Naver
-        #   link: https://gohugo.io/
-        #   size: large
-        #   target: _blank
-        #   color: 'white'
-        #   bgcolor: '#5468d2'
       - subtitle: Team Worker
         subtitlePosition: center
-        # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
         image: images/section/team.png
         color: white
-        # button: 
-        #   name: Google
-        #   link: https://gohugo.io/
-        #   size: large
-        #   target: _blank
-        #   color: 'white'
-        #   bgcolor: '#5468d2'
       - subtitle: Fast Learner
         subtitlePosition: center
-        # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
         image: images/section/skills.png
         color: white
-        # button: 
-        #   name: Yahoo
-        #   link: https://gohugo.io/
-        #   size: large
-        #   target: _blank
-        #   color: 'white'
-        #   bgcolor: '#5468d2'
       - subtitle: Problem Solver
         subtitlePosition: center
         image: images/section/problemsolver.png
         color: white
   - bgcolor: primary
     type: normal
-    # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
     header:
       title: Work experience
       hlcolor: "#5468d2"
@@ -109,14 +75,14 @@ sections:
       width: 340
     body:      
       cards:
-        # - company: Cerner Corporation
-        #   subtitlePosition: left
-        #   position: Academy Software Engineer
-        #   timestamp : Fall 2021
-        #   image: images/section/building.png
-        #   imagePosition: left
-        #   description :
-        #     - point: Incoming software engineer joining the company in Fall 2021.
+        - company: Nordstrom, Inc.
+          subtitlePosition: left
+          position: Software Engineer 2
+          timestamp : April 2021 - Present
+          image: images/section/building.png
+          imagePosition: left
+          description :
+            - point: Working on a lot of interesting projects in the Inventory deployment and planning space.
         - company: Skava systems
           subtitlePosition: left
           position: Software Development Engineer
@@ -151,28 +117,23 @@ sections:
           imagePosition: left
           subtitle: Java
           description:
-            # - point: Have hands on experience in java datastructures and work experience as a java developer.
         - name: Golang
           image: images/section/go.png
           imagePosition: left
           description:
-            # - point: Self-taught golang programmer
           subtitle: Golang
         - name: Git
           image: images/section/git.png
           imagePosition: left
           subtitle: Git
           description:
-            # - point: Have hands on experience in java datastructures and work experience as a java developer.
         - name: Javascript
           image: images/section/js.png
           imagePosition: left
           subtitle: Javascript
           description:
-            # - point: Have hands on experience in java datastructures and work experience as a java developer.
   - bgcolor: primary
     type: project
-    # description: "I am a computer science student with an infinite zeal to design and build scalable web applications. I previously worked as a software development engineer at Skava Systems. I have completed my masters degree in Computer and Information Sciences from University at Buffalo and would be joining Cerner Corporation in Fall 2021."
     header: 
       title: Projects
       hlcolor: "#5468d2"
