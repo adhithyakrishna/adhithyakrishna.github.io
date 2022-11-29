@@ -45,7 +45,7 @@ footer:
 sections:
   - bgcolor: primary
     type: card
-    description: "I am currently working as a Software Engineer 2 at Nordstrom. I am a geek with an infinite zeal to design and build scalable web applications. I obtained my masters degree in Computer and Information Sciences from University at Buffalo."
+    description: "I am currently working as a Software Engineer 2 at Nordstrom. I am a tech enthusiast with an infinite zeal to design and build scalable web applications. I obtained my masters degree in Computer and Information Sciences from University at Buffalo, New York."
     header: 
       title: About me
       hlcolor: "#5468d2"
@@ -78,11 +78,12 @@ sections:
         - company: Nordstrom, Inc.
           subtitlePosition: left
           position: Software Engineer 2
-          timestamp : April 2021 - Present
+          timestamp : April 2021 - Present, Seattle, WA
           image: images/section/building.png
           imagePosition: left
           description :
-            - point: Working on a lot of interesting projects in the Inventory deployment and planning space.
+            - point: Currently working on some interesting projects in the Inventory deployment and planning space.
+            - point: I have hands on experience working with docker, kubernetes, AWS, Kafka, Gitlab-CI
         - company: Skava systems
           subtitlePosition: left
           position: Software Development Engineer
