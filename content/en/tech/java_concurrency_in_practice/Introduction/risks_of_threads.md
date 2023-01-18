@@ -4,8 +4,8 @@ date: 2022-11-16T11:51:25-08:00
 description: Contains Notes for the book Java concurrency in practice - https://jcip.net/) 
 draft: false
 collapsible: false
-meta_image: notes/java_concurrency_in_practice/jcip.png
-image: notes/java_concurrency_in_practice/jcip.png
+meta_image: tech/java_concurrency_in_practice/jcip.png
+image: tech/java_concurrency_in_practice/jcip.png
 weight: 15
 ---
 

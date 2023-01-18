@@ -4,8 +4,8 @@ date: 2020-02-28T10:08:56+09:00
 description: Contains Notes for the book Java concurrency in practice - https://jcip.net/) 
 draft: false
 collapsible: false
-meta_image: notes/java_concurrency_in_practice/jcip.png
-image: notes/java_concurrency_in_practice/jcip.png
+meta_image: tech/java_concurrency_in_practice/jcip.png
+image: tech/java_concurrency_in_practice/jcip.png
 weight: 5
 ---
 
@@ -41,7 +41,7 @@ Threads are light weight processes, most operating systems treat threads, not pr
 3) Each thread has its own program counter, stack and local variables. 
 4) Multiple threads within the same program can be scheduled simultaneously on multiple CPUs.
 
-{{< img src=/notes/java_concurrency_in_practice/Clipboard_2022-11-11-14-00-02.png title="Single vs Multithreaded" caption="Java Concurrency in practice" alt="Single vs Multithreaded" width="700px" position="center" >}}
+{{< img src=/tech/java_concurrency_in_practice/Clipboard_2022-11-11-14-00-02.png title="Single vs Multithreaded" caption="Java Concurrency in practice" alt="Single vs Multithreaded" width="700px" position="center" >}}
 
 In ***absence of explicit coordination*** threads execute ***simultaneously and asynchronously*** with respect to one another. Since threads share the ***memory addresss space*** of their owning process, all threads within a process have access to same variables and allocate objects from the same heap allowing finer grained data sharing than inter-process mechanisms.
 But without ***explicit synchronization*** to coordinate access to shared data, a thread may modify variables that another thread is in the middle of using, with unpredicatable results.

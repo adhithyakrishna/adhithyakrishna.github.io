@@ -3,8 +3,8 @@ title: "Kubernetes services"
 date: 2022-11-05T19:10:37-07:00
 draft: false
 description : "Kubernetes services"
-meta_image: notes/k8s_for_absolute_beginners/k8s.png
-image: notes/k8s_for_absolute_beginners/k8s.png
+meta_image: tech/k8s_for_absolute_beginners/k8s.png
+image: tech/k8s_for_absolute_beginners/k8s.png
 weight : 30
 ---
 {{< featuredImage >}}
@@ -21,7 +21,7 @@ This type of service is know as NodePort service because the service listens to 
 NodePorts can only be in a valid range which is from 30000 to 32767.
 
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-30-11-36-10.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-11-36-10.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
 
 
 Below terms are from the viewpoint of the service. The service is like a virtual server inside of the node. It has its own ip address.
@@ -54,7 +54,7 @@ We can do multiple port mappings within a single service.
 
 This service acts as a built in load balancer to distribute the load across different pods.
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-30-11-52-59.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-11-52-59.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
 
 Kubernetes creates a service that can **_spans across all the nodes_** in the cluster and maps the target port to the same nodeport on all the nodes in the cluster, without having to do any additional configurations.
 This way the application can be accessed using the IP of any node by using the same port number.
@@ -68,7 +68,7 @@ ClusterIP provides a single interface to **access pods in a group**. A service c
 
 Each service gets an IP and name assigned to it inside the cluster and **that is the name that should be used** by the other pods to acccess the service. This type of service is known as ClusterIP. ClusterIP is the default type in kubernetes configuration. If we did not specify the type, ClusterIP would be assigned by default.
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-30-13-25-30.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-13-25-30.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
 
 ```
 apiVersion: v1
@@ -128,7 +128,7 @@ A ClusterIP Service is part of a NodePort Service. A NodePort Service is Part of
 ```kubectl get services``` displays the loadbalancer as well as cluster-ip
 ```minikube service redis-service --url``` displays the node-ports.
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-30-14-18-30.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-14-18-30.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
 
 
 **ClusterIP** - Exposes a service which is only accessible from within the cluster.

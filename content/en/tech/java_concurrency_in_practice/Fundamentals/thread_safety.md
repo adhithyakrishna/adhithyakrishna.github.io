@@ -4,8 +4,8 @@ date: 2022-11-24T10:39:40-08:00
 description: Contains Notes for the book Java concurrency in practice - https://jcip.net/) 
 draft: false
 collapsible: false
-meta_image: notes/java_concurrency_in_practice/jcip.png
-image: notes/java_concurrency_in_practice/jcip.png
+meta_image: tech/java_concurrency_in_practice/jcip.png
+image: tech/java_concurrency_in_practice/jcip.png
 weight: 10
 ---
 {{< featuredImage >}}
@@ -327,7 +327,7 @@ public class SynchronizedFactorizer implements Servlet {
 ```
 In the above example, the servlet caches the last result but has unacceptable concurrency. Only one thread can use the servlet at a time, defeating the purpose of using servlets.
 
-{{< img src=/notes/java_concurrency_in_practice/Clipboard_2022-11-24-01-28-59.png title="Serialized access" caption="https://jcip.net/" alt="Serialized access" width="700px" position="center" >}}
+{{< img src=/tech/java_concurrency_in_practice/Clipboard_2022-11-24-01-28-59.png title="Serialized access" caption="https://jcip.net/" alt="Serialized access" width="700px" position="center" >}}
 
 ```java
 @ThreadSafe

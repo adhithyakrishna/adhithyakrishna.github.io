@@ -3,8 +3,8 @@ title: "Kubernetes architecture"
 date: 2022-10-23T15:35:28-07:00
 draft: false
 description : "Kubernetes architecture"
-meta_image: notes/k8s_for_absolute_beginners/k8s.png
-image: notes/k8s_for_absolute_beginners/k8s.png
+meta_image: tech/k8s_for_absolute_beginners/k8s.png
+image: tech/k8s_for_absolute_beginners/k8s.png
 weight : 10
 ---
 
@@ -31,7 +31,7 @@ Advantages of container orchestration
 
 Node is a machine (physical or virtual) on which k8s is installed. A node is worker machine and this is going to hold the containers launched by kubernetes.
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-24-13-13-10.png title="K8s Nodes" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-24-13-13-10.png title="K8s Nodes" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
 
 
 #### Cluster
@@ -55,7 +55,7 @@ Master is another node with kubernetes installed in it and is configured as a ma
 
 When a k8s is installed on a system, the following componenets are also installed
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-24-14-31-48.png title="K8s Components" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s Components" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-24-14-31-48.png title="K8s Components" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s Components" width="700px" position="center" >}}
 
 
 **1) An API server** - An API server acts as a front-end for kubernetes. The users, management devices, CLI all talk to the API server to interact with kubernetes.
@@ -80,7 +80,7 @@ The following factors are taken into account for scheduling decisions
 
 #### Master vs Nodes
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-24-15-18-35.png title="Master vs worker nodes" caption="https://www.udemy.com/course/learn-kubernetes/" alt="Master vs worker nodes" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-24-15-18-35.png title="Master vs worker nodes" caption="https://www.udemy.com/course/learn-kubernetes/" alt="Master vs worker nodes" width="700px" position="center" >}}
 
 The master node has
 1) Kube-apiserver installed

@@ -20,10 +20,10 @@ footer:
   sections:
     - title: Navigation
       links:
-        - title: Articles
-          link: /articles
-        - title: Blog
-          link: /blog
+        - title: Tech
+          link: /tech
+        - title: Literature
+          link: /literature
     - title: Links
       links:
         - title: GitHub

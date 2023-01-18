@@ -3,8 +3,8 @@ title: "Demo - Voting application 1"
 date: 2022-11-11T11:08:38-08:00
 draft: false
 description : "Kubernetes services"
-meta_image: notes/k8s_for_absolute_beginners/k8s.png
-image: notes/k8s_for_absolute_beginners/k8s.png
+meta_image: tech/k8s_for_absolute_beginners/k8s.png
+image: tech/k8s_for_absolute_beginners/k8s.png
 weight : 35
 ---
 {{< featuredImage >}}
@@ -13,7 +13,7 @@ This notes is for the course [Kuberenetes for absolute beginners](https://www.ud
 
 
 #### Application flow
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-30-15-48-51.png title="K8s Pods demo" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-15-48-51.png title="K8s Pods demo" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
 
 
 #### Voting application
@@ -217,7 +217,7 @@ spec:
 
 #### Output
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-30-15-55-02.png title="K8s Pods demo" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-15-55-02.png title="K8s Pods demo" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
 
 #### Application communication (in docker)
 
@@ -225,4 +225,4 @@ spec:
 Note that links is deprecated but this gives an idea of how the applications communicate internally.
 {{< /boxmd >}}
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-30-15-56-46.png title="K8s Pods demo" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-15-56-46.png title="K8s Pods demo" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}

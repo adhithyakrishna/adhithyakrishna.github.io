@@ -1,17 +1,11 @@
 [[main]]
-  identifier = "articles"
-  name = "Articles"
-  url = "articles"
+  identifier = "tech"
+  name = "Tech"
+  url = "tech"
   weight = 1
 
 [[main]]
-  identifier = "notes"
-  name = "Notes"
-  url = "notes"
+  identifier = "literature"
+  name = "Literature"
+  url = "literature"
   weight = 2
-
-[[main]]
-  identifier = "blog"
-  name = "Blog"
-  url = "blog"
-  weight = 3

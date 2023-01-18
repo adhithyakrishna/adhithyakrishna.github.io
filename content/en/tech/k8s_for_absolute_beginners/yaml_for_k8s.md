@@ -3,8 +3,8 @@ title: "Yaml for Kubernetes"
 date: 2022-11-01T12:41:20-07:00
 draft: false
 description : "Yaml for Kubernetes"
-meta_image: notes/k8s_for_absolute_beginners/k8s.png
-image: notes/k8s_for_absolute_beginners/k8s.png
+meta_image: tech/k8s_for_absolute_beginners/k8s.png
+image: tech/k8s_for_absolute_beginners/k8s.png
 weight : 20
 ---
 {{< featuredImage >}}

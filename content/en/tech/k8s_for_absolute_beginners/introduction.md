@@ -3,8 +3,8 @@ title: "Introduction"
 date: 2022-10-23T15:35:28-07:00
 draft: false
 description : "Introduction to Kubernetes"
-meta_image: notes/k8s_for_absolute_beginners/k8s.png
-image: notes/k8s_for_absolute_beginners/k8s.png
+meta_image: tech/k8s_for_absolute_beginners/k8s.png
+image: tech/k8s_for_absolute_beginners/k8s.png
 weight : 5
 ---
 
@@ -44,7 +44,7 @@ Os kernel is responsible for interacting with underlying hardware. Custom softwa
 
 #### Docker vs Virtual machines
 
-{{< img src=/notes/k8s_for_absolute_beginners/Clipboard_2022-10-23-12-05-47.png title="Containers vs Virtual Machine" caption="https://www.udemy.com/course/learn-kubernetes/" alt="container vs Vm" width="700px" position="center" >}}
+{{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-23-12-05-47.png title="Containers vs Virtual Machine" caption="https://www.udemy.com/course/learn-kubernetes/" alt="container vs Vm" width="700px" position="center" >}}
 
 **In case of docker we have**
 1) Underlying hardware infrastructure.
