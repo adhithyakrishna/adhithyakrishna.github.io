@@ -171,7 +171,7 @@ tech<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 
 	<span class=nx>fmt</span><span class=p>.</span><span class=nf>Print</span><span class=p>(</span><span class=s>&#34;The animal says : &#34;</span><span class=p>,</span> <span class=nx>i</span><span class=p>)</span>
 	<span class=nx>i</span><span class=p>.</span><span class=nx>Language</span><span class=p>.</span><span class=nf>speak</span><span class=p>()</span>
 <span class=p>}</span>
-</code></pre></td></tr></table></div></div><p>Now Inititator struct implements the language interface. Since it includes, Language interface as one of its fields, chaining is very easy to do.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</code></pre></td></tr></table></div></div><p>Now Initiator struct implements the language interface. Since it includes, Language interface as one of its fields, chaining is very easy to do.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span></code></pre></td><td class=lntd><pre class=chroma><code class=language-Go data-lang=Go>    <span class=nx>c</span> <span class=o>:=</span> <span class=nx>Animal</span><span class=p>{</span><span class=nx>Initiator</span><span class=p>{</span><span class=nx>Cat</span><span class=p>{}}}</span>
     <span class=nx>c</span><span class=p>.</span><span class=nf>speak</span><span class=p>()</span>
