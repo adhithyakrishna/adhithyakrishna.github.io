@@ -26,22 +26,20 @@ Docker (most popular container technology).
 ##### Problems before containers
 1) Application component and services being incompatible with underlying OS.
 2) Compatibility between services, libraries and dependencies on the OS.
-3) Compatability checks had to be make during every component upgrade AKA matrix from hell.
-4) Onboarding a new developer / setting up a local instance was difficult.
+3) Compatibility checks had to be make during every component upgrade AKA matrix from hell.
+4) On-boarding a new developer / setting up a local instance was difficult.
 
 ##### With docker
 1) Each component can run in its own container with its own libraries and dependencies.
 2) Docker is compatible with any operating systems. 
-3) Onboarding a new developer / setting up a local instance is very easy.
+3) On-boarding a new developer / setting up a local instance is very easy.
 
 #### Os components and responsibilities
-All operating sytems consists of two important components
+All operating systems consists of two important components
 1) OS Kernel
 2) Software
 
-Os kernel is responsible for interacting with underlying hardware. Custom software differentiates operating systems from each other. **Docker container** shares the underlying kernel of docker host. Docker is not meant to virualize and run different operating systems on the same hardware. The main purpose is to containerize and ship them.
-
-
+Os kernel is responsible for interacting with underlying hardware. Custom software differentiates operating systems from each other. **Docker container** shares the underlying kernel of docker host. Docker is not meant to virtualise and run different operating systems on the same hardware. The main purpose is to containerize and ship them.
 #### Docker vs Virtual machines
 
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-23-12-05-47.png title="Containers vs Virtual Machine" caption="https://www.udemy.com/course/learn-kubernetes/" alt="container vs Vm" width="700px" position="center" >}}
@@ -51,12 +49,12 @@ Os kernel is responsible for interacting with underlying hardware. Custom softwa
 2) Operating system
 3) Docker installed on the OS (which is responsible for managing the containers that run with libraries and dependencies).
 
-**In case of virual machine**
+**In case of virtual machine**
 1) Underlying hardware infrastructure
 2) Operating system
 3) Hypervisor (ESX or virtualization)
 4) Virtual machine
-5) Virual machine has its own OS inside
+5) Virtual machine has its own OS inside
 6) Dependencies
 7) Application
 
@@ -78,6 +76,6 @@ An image is a package or a template that is used to create one or more container
 Containers are running instances of that image that are isolated and have their own **environments and set of processes.**
 
 #### Advantage of containers
-Traditonally, developers developed applications and hand it over to Ops team to deploy and manage it in production environments along with some instructions. If they hit an issue, they would have to work with developers to resolve it.
+Traditionally, developers developed applications and hand it over to Ops team to deploy and manage it in production environments along with some instructions. If they hit an issue, they would have to work with developers to resolve it.
 
-With docker, major portion of this infrastructure setup is now in the hands of developers in form of Docker file. The instructions that were put to gether previously (handed off to the ops team) can now put together easily into a Dockerfile (to create an image for their application). The image can run on any container platform and is **guaranteed to run the same way everywhere**. Ops team can now use the image to deploy the application. Since OPS team are not modifying it, it continues to work the same when deployed in production.
+With docker, major portion of this infrastructure setup is now in the hands of developers in form of Docker file. The instructions that were put together previously (handed off to the ops team) can now put together easily into a Docker file (to create an image for their application). The image can run on any container platform and is **guaranteed to run the same way everywhere**. Ops team can now use the image to deploy the application. Since OPS team are not modifying it, it continues to work the same when deployed in production.

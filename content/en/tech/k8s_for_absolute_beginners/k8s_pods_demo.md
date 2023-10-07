@@ -10,17 +10,13 @@ weight : 35
 {{< featuredImage >}}
 
 This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
-
-
 #### Application flow
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-15-48-51.png title="K8s Pods demo" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
-
-
 #### Voting application
 
 We create pods and expose the container port. Please note that all the docker images are pre-built and this demo is to understand how different microservices communicate with each other through k8s services.
 
-Create a definition for pod ```voting-app-pod.yml```
+Create a definition for pod ``voting-app-pod.yml``
 ```
 apiVersion: v1
 kind: Pod
@@ -39,7 +35,7 @@ spec:
   restartPolicy: Always
 ```
 
-Create a Loadbalancer service to expose the application to external world ```voting-app-service.yml```
+Create a Loadbalancer service to expose the application to external world ``voting-app-service.yml``
 
 ```
 apiVersion: v1
@@ -61,7 +57,7 @@ spec:
 
 #### Result application
 
-Create a definition for a pod ```result-app-pod.yml```
+Create a definition for a pod ``result-app-pod.yml``
 ```
 apiVersion: v1
 kind: Pod
@@ -80,7 +76,7 @@ spec:
   restartPolicy: Always
 ```
 
-Create a Loadbalancer service to expose the application to external world ```result-app-service.yml```
+Create a Loadbalancer service to expose the application to external world ``result-app-service.yml``
 
 ```
 apiVersion: v1
@@ -102,7 +98,7 @@ spec:
 
 #### Redis application
 
-Create a definition for a pod ```redis-pod.yml```
+Create a definition for a pod ``redis-pod.yml``
 ```
 apiVersion: v1
 kind: Pod
@@ -121,7 +117,7 @@ spec:
   restartPolicy: Always
 ```
 
-Create a NodePort service for postgres ```redis-service.yml```
+Create a NodePort service for postgres ``redis-service.yml``
 ```
 apiVersion: v1
 kind: Service
@@ -143,12 +139,12 @@ spec:
 {{< boxmd >}}
 Services are created so that the pods can communicate to each other.
 
-Services should be named based on what other applications are looking for. The  ```name``` here is set to db because the application looks for service named ```db``` (you can see that in the code).
+Services should be named based on what other applications are looking for. The  ``name`` here is set to db because the application looks for service named ``db`` (you can see that in the code).
 {{< /boxmd >}}
 
 #### Postgres application
 
-Create a definition for a pod ```postgres-pod.yml```
+Create a definition for a pod ``postgres-pod.yml``
 ```
 apiVersion: v1
 kind: Pod
@@ -174,7 +170,7 @@ spec:
   restartPolicy: Always
 ```
 
-Create a NodePort service for postgres ```postgres-service.yml```
+Create a NodePort service for postgres ``postgres-service.yml``
 ```
 apiVersion: v1
 kind: Service
@@ -192,13 +188,11 @@ spec:
     app: demo-voting-app
   type: NodePort
 ```
-
-
 #### Worker application
 
-Note that thess pod is needed just for internal communication.
+Note that these pod is needed just for internal communication.
 
-Create a definition for a pod ```worker-app-pod.yml```
+Create a definition for a pod ``worker-app-pod.yml``
 ```
 apiVersion: v1
 kind: Pod

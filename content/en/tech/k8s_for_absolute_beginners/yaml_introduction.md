@@ -10,16 +10,9 @@ weight : 15
 {{< featuredImage >}}
 
 This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
-
-
 #### Yaml introduction
-
-
 According to yaml.org, **"YAML is a human-friendly, data serialization standard for all programming languages."**
-
 Yaml is used to create kubernetes configurations
-
-
 #### Structure of YAML file
 
 ##### Key Value Pair 
@@ -58,13 +51,9 @@ Grapes:
   Fat: 0.4g
   Carbs: 20g
 ```
-
-
 {{< box >}}
 It is important to indent Yaml properly. Improper indentation would break a sibling / parent relationship between the properties.
 {{< /box >}}
-
-
 #### Advanced YAML structures
 
 ##### List containing a list of dictionaries.
@@ -100,4 +89,3 @@ Banana:
 **A list is ordered**
 **A dictionary is unordered**
 {{< /box >}}
-

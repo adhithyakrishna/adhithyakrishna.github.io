@@ -11,11 +11,9 @@ weight : 10
 {{< featuredImage >}}
 
 This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
-
-
 #### Container orchestration
 
-Kubernetes is a Container Orchestration technology. Docker has its own container orchestraction - docker swarm. There is also MESOS from Apache.
+Kubernetes is a Container Orchestration technology. Docker has its own container orchestration - docker swarm. There is also MESOS from Apache.
 
 The process of automatically deploying and managing containers (scaling up when load increases and scaling down when load decreases) is known as Container Orchestration. 
 
@@ -32,20 +30,16 @@ Advantages of container orchestration
 Node is a machine (physical or virtual) on which k8s is installed. A node is worker machine and this is going to hold the containers launched by kubernetes.
 
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-24-13-13-10.png title="K8s Nodes" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
-
-
 #### Cluster
 
 Cluster is a set of nodes grouped together. This way, even if one node fails, the application is still accessible from other nodes. 
 
 Multiple nodes would help with sharing load as well.
-
-
 #### Master
 
 Master is another node with kubernetes installed in it and is configured as a master. The master watches over the nodes in the cluster and is responsible for the actual orchestraction of containers on the worker nodes.
 
-**Few responsibilites of master node**
+**Few responsibilities of master node**
 1) Responsible for managing the cluster.
 2) Stores the information about the members of the cluster.
 3) Monitor nodes.
@@ -53,10 +47,9 @@ Master is another node with kubernetes installed in it and is configured as a ma
 
 ## Components of Kubernetes (Control plane)
 
-When a k8s is installed on a system, the following componenets are also installed
+When a k8s is installed on a system, the following components are also installed
 
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-24-14-31-48.png title="K8s Components" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s Components" width="700px" position="center" >}}
-
 
 **1) An API server** - An API server acts as a front-end for kubernetes. The users, management devices, CLI all talk to the API server to interact with kubernetes.
 
@@ -68,10 +61,10 @@ When a k8s is installed on a system, the following componenets are also installe
 
 **5) Controllers**  - They are the brain behind the orchestration. They notice and respond when the nodes, containers or endpoints go down. The controllers would make decisions to bring up new containers in such case.
 
-**6) Schedulers** - Reponsible for distributing work or containers across multiple nodes. It looks for newly created containers and assigns them to Nodes.
+**6) Schedulers** - Responsible for distributing work or containers across multiple nodes. It looks for newly created containers and assigns them to Nodes.
 
 The following factors are taken into account for scheduling decisions
-1) Induvidual and collective resource requirements
+1) Individual and collective resource requirements
 2) Hardware/software/policy constraints
 3) Affinity and anti-affinity specifications
 4) Data locality
@@ -91,14 +84,10 @@ The master node has
 Worker node has
 1) Container run time installed. 
 2) Kubelet agent - provides health information of the worker node to the master and carry out the actions requested by the master on the worker nodes.
-
-
 #### Kubectl (kube control)
 Tool used to deploy and manage applications on a Kubernetes cluster
 1) Provide cluster information
 2) Get status of nodes in the cluster
-
-
 #### Pod
 Kubernetes does not deploy containers directly on the worker nodes. The containers are encapsulated into a kubernetes objects known as pods. A Pod is a single instance of an application and is the smallest object that can be created in kubernetes.
 

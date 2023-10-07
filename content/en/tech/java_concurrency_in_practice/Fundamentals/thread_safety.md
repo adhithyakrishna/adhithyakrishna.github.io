@@ -19,7 +19,7 @@ An object's state may include fields from other dependent objects. Example a ```
 **Mutable:** Value could change during its lifetime.
 
 #### Thread safety
-Threadsafety is about trying to protect the data from uncontrolled concurrent access. Whether an object needs to be thread-safe depends on whether it will be accessed from multiple threads. This is a property of **how an object is used in a program and not what it does**.
+Thread-safety is about trying to protect the data from uncontrolled concurrent access. Whether an object needs to be thread-safe depends on whether it will be accessed from multiple threads. This is a property of **how an object is used in a program and not what it does**.
 
 Making an object thread-safe requires using **synchronization** to coordinate access to its mutable state. Failing to do so could result in **data corruption and other undesirable consequences.**
 
@@ -156,7 +156,7 @@ When two threads A and B execute ``getInstance()`` at the same time. 'A' sees th
 3) How long A takes to initiate the ``ExpensiveOject`` and set the instance field.
 
 'B' may again initialize a new instance even though ``getInstance()`` was supposed to return the same instance.
-Race conditions does not always result in failure but can cause serious problems. As an example, different instances from multiple invocatiosn could cause registrations to be lost or multiple activities to have inconsistent views of the set of registered objects.
+Race conditions does not always result in failure but can cause serious problems. As an example, different instances from multiple invocation could cause registrations to be lost or multiple activities to have inconsistent views of the set of registered objects.
 
 ##### read-modify-write
 As we saw previously ``++count`` is not an atomic operation. To properly increment the counter, the current thread must know its previous value and make sure no other thread is changing or using the value in the middle of the update.
@@ -212,7 +212,7 @@ To preserve state consistency, update related state variables in a single atomic
 Reentrancy means that locks are acquired on a per-thread rather than per invocation basis. 
 When a thread requests a lock that is already held by another thread, the requesting thread blocks. But since **intrinsic** locks are re entrant, if a thread tries to acquire a lock that it already holds, the request succeeds.
 Reentrancy is implemented by associated each lock with an acquisition count and an owning thread. 
-When a thread acquires the lock (previously unheld lock) the JVM records the owner and sets the acquisition count to 1. If the same thread acquires the lock again, the count is incremented and when the **owning thread exists the synchonrized block** the count is decremented. When the counter becomes zero, the lock is released.
+When a thread acquires the lock (previously unheld lock) the JVM records the owner and sets the acquisition count to 1. If the same thread acquires the lock again, the count is incremented and when the **owning thread exists the synchronized block** the count is decremented. When the counter becomes zero, the lock is released.
 
 Reentrancy facilitates encapsulation of locking behavior and thus simplifies the development of object-oriented concurrent code.
 
@@ -258,7 +258,7 @@ if (!vector.contains(element))
  vector.add(element);
 ```
 
-At the same time, synchronizing every method can lead to **liveness or performance problems**.
+At the same time, synchronizing every method can lead to **liveliness or performance problems**.
 
 #### Liveness and Performance
 It is easy to improve the concurrency of a component while maintaining thread safety by **narrowing the scope of synchronized block**. However, the scope of the synchronized block should not be too small - an atomic operation should not be divided into to more than one synchronized block. 
@@ -347,7 +347,7 @@ The above example uses two synchronized block, each limited to a short section o
 
 The portions of code that are outside the ```synchronized blocks``` operate exclusively on local variables, which are not shared across threads and therefore do not require synchronization.
 
-Acquiring and releasing a lock has some overhead, so it is undesirable to break down synchronized blocks too far (even though it would not compromize atomicity).
+Acquiring and releasing a lock has some overhead, so it is undesirable to break down synchronized blocks too far (even though it would not compromise atomicity).
 
 CachedFactorizer holds the lock when accessing state variables and for the duration of compound actions but releases it before executing the potentially long-running factorization operation. This preserves thread safety without affecting concurrency.
 
@@ -356,7 +356,7 @@ when implementing a synchronization policy, resist the temptation to prematurely
 {{< /boxmd >}}
 
 {{< boxmd >}}
-Holding a lock for a long time, either due to compute-intensive tasks or due to a blocking operation, introduces the risk of liveness or performance problems.
+Holding a lock for a long time, either due to compute-intensive tasks or due to a blocking operation, introduces the risk of liveliness or performance problems.
 
-Avoid holding locks during lengthy computations or operations at risk of not completing quickly such as netowrk or console I/O.
+Avoid holding locks during lengthy computations or operations at risk of not completing quickly such as network or console I/O.
 {{< /boxmd >}}

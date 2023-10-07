@@ -13,19 +13,14 @@ This notes is for the course [Kuberenetes for absolute beginners](https://www.ud
 
 Kubernetes service enable communication between various components within or ourside of the application. Kubernetes Services helps us connect applications with other applications or users.
 Services enable connectivity between the group of pods. For example front-end to the users, connection between the frontend and backend processes and backend to to external data source.
-Services enable **Loose coupling** between microservices in our application.
+Services enable **Loose coupling** between micro services in our application.
 
 #### Node Port
 One of the use case of Nodeport is to listen to a port on the Node and forward requests on that port to a port on the pod running the web application.
 This type of service is know as NodePort service because the service listens to a port on the Node and forwards requests to Pods.
 NodePorts can only be in a valid range which is from 30000 to 32767.
-
-
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-11-36-10.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
-
-
 Below terms are from the viewpoint of the service. The service is like a virtual server inside of the node. It has its own ip address.
-
 1) TargetPort - The port on the Pod where the actual web server is running - (port 80). This is where the service forwards requests to.
 2) Port - Port on the service itself. (Simply referred to as the port).
 3) NodePort - Port on the node, which can be used to access the web server externally.
@@ -50,7 +45,7 @@ Here the only mandatory field is port. The target port would be the same as port
 
 We can do multiple port mappings within a single service.
 
-*Labels and selectors* are used to map the pods to the service. When a service is created it looks for matching pods with the labels and finds 3 of them. The service then auto selects all 3 pods to forward the external requests coming from the user. No additional configuration is needed to make this happen.
+_Labels and selectors_ are used to map the pods to the service. When a service is created it looks for matching pods with the labels and finds 3 of them. The service then auto selects all 3 pods to forward the external requests coming from the user. No additional configuration is needed to make this happen.
 
 This service acts as a built in load balancer to distribute the load across different pods.
 
@@ -64,9 +59,9 @@ When PODs are removed or added the service is automatically updated making it hi
 
 #### ClusterIP
 
-ClusterIP provides a single interface to **access pods in a group**. A service created for backend pods will help group all the backend pods and provide a single interface for the other pods to access this service, allowing to easily and effectively deploy a microservices based application on a Kubernetes cluster. Similarly, creating additional services for database layer allows the backend pods to access the database layer through this sergice. 
+ClusterIP provides a single interface to **access pods in a group**. A service created for back-end pods will help group all the back-end pods and provide a single interface for the other pods to access this service, allowing to easily and effectively deploy a micro-services based application on a Kubernetes cluster. Similarly, creating additional services for database layer allows the back-end pods to access the database layer through this service. 
 
-Each service gets an IP and name assigned to it inside the cluster and **that is the name that should be used** by the other pods to acccess the service. This type of service is known as ClusterIP. ClusterIP is the default type in kubernetes configuration. If we did not specify the type, ClusterIP would be assigned by default.
+Each service gets an IP and name assigned to it inside the cluster and **that is the name that should be used** by the other pods to access the service. This type of service is known as ClusterIP. ClusterIP is the default type in kubernetes configuration. If we did not specify the type, ClusterIP would be assigned by default.
 
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-13-25-30.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
 
@@ -88,8 +83,6 @@ spec:
 #### LoadBalancer
 Exposes the Service externally using a cloud provider's load balancer.
 On cloud providers which support external load balancers, setting the type field to LoadBalancer provisions a load balancer for your Service.
-
-
 ```
 apiVersion: v1
 kind: Service
@@ -109,9 +102,6 @@ status:
     ingress:
     - ip: 192.0.2.127
 ```
-
-
-
 #### Differrence between different services
 
 https://stackoverflow.com/questions/41509439/whats-the-difference-between-clusterip-nodeport-and-loadbalancer-service-types
@@ -121,21 +111,15 @@ Excerpts from the above stack overflow link
 {{< box >}}
 You can access a service from your load balancer's IP address, which routes your request to a nodePort, which in turn routes the request to the clusterIP port. You can acess this service as you would a NodePort or a ClusterIP service as well.
 {{< /box >}}
-
-
 A ClusterIP Service is part of a NodePort Service. A NodePort Service is Part of a Load Balancer Service.
 
 ```kubectl get services``` displays the loadbalancer as well as cluster-ip
 ```minikube service redis-service --url``` displays the node-ports.
 
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-14-18-30.png title="K8s Services" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s services" width="700px" position="center" >}}
-
-
 **ClusterIP** - Exposes a service which is only accessible from within the cluster.
 **NodePort** - Exposes a service via a static port on each node’s IP.
 **LoadBalancer** - Exposes the service via the cloud provider’s load balancer.
-
-
 Pods within the cluster can talk to each other through **clusterIP**.
 To make a pod accessible from outside the cluster, it will create **nodePort**. Node port will make use of the clusterIP to do this.
 Load balancer puts a loadbalancer in front so that the inbound traffic is distributed between node ports.

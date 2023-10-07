@@ -26,7 +26,7 @@ spec:
 ```
 
 1) apiVersion - Version of k8s API
-2) kind - type of object (pod, replicaset, service, deployment)
+2) kind - type of object (pod, replica-set, service, deployment)
 3) metadata - data about the object (name and label), it is in the form of a dictionary. Here name is a string value and labels is a dictionary. Labels are useful to identify objects at a later point in time.
 ```
 metadata:
@@ -42,8 +42,6 @@ spec:
     - name: nginx-container
       image: nginx
 ```
-
-
 #### Few of the kubectl commands
 
 ```
