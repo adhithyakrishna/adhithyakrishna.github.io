@@ -30,9 +30,9 @@ In the above example,```value++``` is three separate operations.
 2) Add one to it
 3) Write the new value.
 
-Two threads can call getNext and receive the same value since operations in multiple threads may be arbitarily interleaved by the runtime. The result is that same sequence number is returned from multiple calls in different threads.
+Two threads can call getNext and receive the same value since operations in multiple threads may be arbitrarily interleaved by the runtime. The result is that same sequence number is returned from multiple calls in different threads.
 
-![](@attachment/Clipboard_2022-11-11-15-19-58.png)
+{{< img src=/tech/java_concurrency_in_practice/f2d49f67b22b02e86c4295aeff48bb4a.png title="Safety hazards" caption="Unsafe sequence example" alt="Unsafe sequence example" width="700px" position="center" >}}
 
 The above unsafe sequence example illustrate the common concurrency hazard called **race condition**.
 
