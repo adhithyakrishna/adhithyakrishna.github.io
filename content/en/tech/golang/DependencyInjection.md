@@ -108,7 +108,7 @@ log 2021/02/01 18:48:55 main.go:18: Inside handler
 log 2021/02/01 18:49:04 home.go:19: Inside home
 {{< /boxmd >}}
 
-We can clearly see that the logger instance is initialised once and injected into wherever necessary.
+We can clearly see that the logger instance is initialized once and injected into wherever necessary.
 
 {{< alert theme="success" dir="ltr" >}}
 Find the source code here https://github.com/adhithyakrishna/go-dependency-injection

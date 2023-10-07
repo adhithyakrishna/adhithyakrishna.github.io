@@ -41,8 +41,6 @@ func main() {
 	c.speak();
 }
 ```
-
-
 Now, Let us say, we work for a client who wants add a functionality. It may be something like, adding a prefix to the language spoken by the animal.
 
 To do that, we can make use of the concept called interface chaining.
@@ -60,9 +58,7 @@ func (i Initiator) speak() {
 }
 ```
 
-Now Inititator struct implements the language interface. Since it includes, Language interface as one of its fields, chaining is very easy to do.
-
-
+Now Initiator struct implements the language interface. Since it includes, Language interface as one of its fields, chaining is very easy to do.
 ```Go
     c := Animal{Initiator{Cat{}}}
     c.speak()

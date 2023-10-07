@@ -5,7 +5,6 @@ draft: false
 description : "An article about function types in golang"
 weight : 20
 ---
-
 Golang lets us declare a variable of type functions. In Golang functions are first class citizens. In this article we are going to see how the functions can be used a type in golang.
 
 #### Declaration of the variable
@@ -14,9 +13,7 @@ Golang lets us declare a variable of type functions. In Golang functions are fir
 type validator func(*User) error
 ```
 
-validator is the name of the variable that has a type function which takes the struct User as its argument and returns an error.
-
-
+Validator is the name of the variable that has a type function which takes the struct User as its argument and returns an error.
 #### Declaration of struct and functions on the struct
 
 ```Go
@@ -116,6 +113,6 @@ func main() {
 }
 ```
 
-If you note line number 52 in the above code you can see how an instance of user struct, initialised with an email is passed to different functions, validated and if there is an error in the validation it prints the error or it prints the email is valid.
+If you note line number 52 in the above code you can see how an instance of user struct, initialized with an email is passed to different functions, validated and if there is an error in the validation it prints the error or it prints the email is valid.
 
 We can included multiple such functions and calling them is a matter of including them to the runUserValidations functions.

@@ -34,7 +34,7 @@ In the above code we declare a type of struct named Dog. There is a method embed
 
 We declare a new struct Animal, which has Dog as one of if its fields. Now, All the methods embedded on the struct Dog can be accessed by creating a variable for the struct type Animal (Line 14).
 
-Though this works fine, the problem here is, the struct Animal has a field Dog hardcoded to it. Suppose we have to include a cat, we have to then alter the struct Animal to include cat. It doesnt end there, we'll also have to modify the variable initialisation to include Cat. Now, since both dog and cat has the function speak we will have to explicitly specify which function are we intending to call. Code including cat is given below.
+Though this works fine, the problem here is, the struct Animal has a field Dog hard coded to it. Suppose we have to include a cat, we have to then alter the struct Animal to include cat. It doesnt end there, we'll also have to modify the variableinitializationn to include Cat. Now, since both dog and cat has the function speak we will have to explicitly specify which function are we intending to call. Code including cat is given below.
 
 ```Go
 type Animal struct {
@@ -99,9 +99,9 @@ type Animal struct {
 }
 ```
 
-Now, any struct that implements the speak function can be initialised to the Language field during declaration. We need not disturb the Animal struct again.
+Now, any struct that implements the speak function can be initialized to the Language field during declaration. We need not disturb the Animal struct again.
 
-Invoking the speak function for Dog is just a matter of initialising the variable with the struct Animal with any one of the implementations of the Language interface as below.
+Invoking the speak function for Dog is just a matter of initializing the variable with the struct Animal with any one of the implementations of the Language interface as below.
 
 ```Go
 d := Animal{Dog{}}
@@ -118,7 +118,7 @@ func (d Cat) speak() {
 }
 ```
 
-The realworld advantage to doing this is that, now any time we decide to replace a funcionality, say, we have included some customer specific logic, it is as easy as swapping it with the new struct that implements the interface.
+The real world advantage to doing this is that, now any time we decide to replace a functionality, say, we have included some customer specific logic, it is as easy as swapping it with the new struct that implements the interface.
 
 Full code can be found below
 

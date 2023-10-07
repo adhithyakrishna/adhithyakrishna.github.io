@@ -6,4 +6,4 @@ draft: false
 collapsible: true
 ---
 
-Contains articles regarding my learnings of golang.
+Contains articles regarding my learning of golang.
