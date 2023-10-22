@@ -124,6 +124,6 @@ Pods within the cluster can talk to each other through **clusterIP**.
 To make a pod accessible from outside the cluster, it will create **nodePort**. Node port will make use of the clusterIP to do this.
 Load balancer puts a loadbalancer in front so that the inbound traffic is distributed between node ports.
 
-If you want to acccess the service from outside a cluster only Nodeport will be accessible and not clusterIP.
+If you want to access the service from outside a cluster only Nodeport will be accessible and not clusterIP.
 
 Additional reference: https://stackoverflow.com/a/72988866

@@ -9,7 +9,7 @@ weight : 5
 ---
 
 {{< featuredImage >}}
-
+ 
 This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 
 ## Introduction
