@@ -9,6 +9,8 @@ weight : 5
 
 {{< featuredImage >}}
 
+This notes is for the book - [High performance java persistence](https://vladmihalcea.com/books/high-performance-java-persistence/)
+
 The JDBC API provides common interface for communicating to the db server. To communicate to a db server, a Java program must first obtain a _java.sql.connection._. _java.sql.Driver_ is the actual db connection provider. _java.sql.DriverManager_ provides the more convenience since it can also resolve the JDBC driver associated with the current db connection URL.
 
 #### DriverManager
@@ -135,18 +137,19 @@ Where,
 
 Assuming there is a traffic spike of 250 requests per second for 3 seconds. Then the `Lspike is 750 requests`. If the `throughput (μ) is 50 requests / second,` Then the total time to process all the records is 15 seconds.
 
-  
+  #### A real-life connection pool monitoring example
 
+The dynamics of enterprise systems are difficult to express with equations like Queuing theory and metrics become fundamental for resource provisioning. By continuously monitoring the connection usage patterns, it is much easier to react and adjust the _pool size_ when initial configurations doesn't hold anymore.
 
+In case of an unforeseen traffic spike, the connection acquisition time could reach the DatasSource timeout threshold.
 
+Following were the observations made while conducting an experiment using an opensource connection pool and batch processor.
 
-
-
-
-
-
-
-
-
-
-
+{{< alert theme="success" dir="ltr" >}} 
+1. The more incoming concurrent connection requests, the higher the response time (for obtaining a pooled connection).
+2. The average value levels up all outliers, that is why percentiles are preferred in application performance monitoring. Percentiles make outliers visible while capturing the immediate effect of a given traffic change.
+3. It is important to set the idle connection timeout threshold, this way pool can release unused connection, so the database can provide them to other clients as well.
+4. Holding connections for a long periods of time can increase the connection acquisition time and fewer resources will be available to the other incoming requests.
+5. Long running transactions might hold db locks, which in turn might increase the serial portion of the current execution context, hindering parallelism. (Can be addressed by indexing slow queries or by splitting the application-level transaction over multiple db transactions.)
+{{< /alert >}}
+   
