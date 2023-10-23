@@ -92,8 +92,8 @@ A _two phase_ commit protocol can be used to enlist all participating nodes in o
 
 If nodes are separated by WAN (Wide area network), synchronization latencies can increase dramatically. If one node is no longer reachable, the synchronization could fail and the transaction will roll back on all masters.
 
-  Synchronous replication - Although it provides data consistency, might incur high transaction response time.
-  Asynchronous replication - Although it provides better through put, it has to do it at the cost of having to resolve conflicts. The async master-master replication requires a conflict detection and automatic conflict resolution algorithms. When a conflict is detected, that automatic resolution tries to merge the two conflicting branches, and if it fails, manual intervention is required.
+  * Synchronous replication - Although it provides data consistency, might incur high transaction response time.
+  * Asynchronous replication - Although it provides better through put, it has to do it at the cost of having to resolve conflicts. The async master-master replication requires a conflict detection and automatic conflict resolution algorithms. When a conflict is detected, that automatic resolution tries to merge the two conflicting branches, and if it fails, manual intervention is required.
 
   ##### Sharding
   When the data size grows beyond the overall capacity of replicated multi-node environment, splitting data becomes unavoidable. Sharding means distributing data across multiple nodes, so that each node has only subset of data.
