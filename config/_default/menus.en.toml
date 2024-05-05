@@ -3,9 +3,3 @@
   name = "Tech"
   url = "tech"
   weight = 1
-
-[[main]]
-  identifier = "literature"
-  name = "Literature"
-  url = "literature"
-  weight = 2
