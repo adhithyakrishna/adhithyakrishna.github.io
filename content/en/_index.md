@@ -22,8 +22,6 @@ footer:
       links:
         - title: Tech
           link: /tech
-        - title: Literature
-          link: /literature
     - title: Links
       links:
         - title: GitHub
