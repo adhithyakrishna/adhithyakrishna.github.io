@@ -349,7 +349,7 @@ The portions of code that are outside the ```synchronized blocks``` operate excl
 
 Acquiring and releasing a lock has some overhead, so it is undesirable to break down synchronized blocks too far (even though it would not compromise atomicity).
 
-CachedFactorizer holds the lock when accessing state variables and for the duration of compound actions but releases it before executing the potentially long-running factorization operation. This preserves thread safety without affecting concurrency.
+CachedFactorizer holds the lock when accessing state variables and for the duration of compound actions but releases it before executing the potentially long-running factorization operation. These preserves thread safety without affecting concurrency.
 
 {{< boxmd >}}
 when implementing a synchronization policy, resist the temptation to prematurely sacrifice simplicity (potentially compromising safety) for the sake of performance.

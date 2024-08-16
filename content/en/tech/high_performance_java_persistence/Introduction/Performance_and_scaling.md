@@ -1,5 +1,5 @@
 ---
-title: "Performance and Scaling"
+title: Performance and Scaling
 date: 2023-10-21 T 14:58:16-1697925496.196
 draft: false
 enableToc: true
