@@ -109,13 +109,3 @@ If nodes are separated by WAN (Wide area network), synchronization latencies can
   1. Optimizing data layer to deliver lower transaction response time
   2. Scaling each replicated node to a cost-effective configuration
   3. Adding more replicated nodes until synchronization latencies start dropping below acceptable threshold.
-     
-  
-  
-  
-
-
-
-
-
-
