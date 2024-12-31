@@ -3,3 +3,9 @@
   name = "Tech"
   url = "tech"
   weight = 1
+
+[[main]]
+  identifier = "Blog"
+  name = "Blog"
+  url = "blog"
+  weight = 2

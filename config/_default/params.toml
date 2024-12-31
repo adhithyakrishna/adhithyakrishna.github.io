@@ -1,14 +1,13 @@
 logo = true
 logoText = "Akrishna"
 logoType = "short" # long, short
-description = "The ZDoc theme for Hugo example site."
+description = "Adhi is a highly motivated tech enthusiast with a Master's in Computer and Information Sciences. He is currently working as a Senior Software Engineer at Nordstrom."
 
 themeOptions = ["dark", "light"]
 
 useFaviconGenerator = true # https://www.favicon-generator.org/
 
 enableTocSwitch = true
-enableLandingBackground = false
 enableSearch = true
 enableSearchHighlight = true
 enableLangChange = false
