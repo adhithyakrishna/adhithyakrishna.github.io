@@ -28,7 +28,7 @@ header:
     paddingY: 0
     align: center
     title:
-      - Zzo blog
+      - Adhi's Decompiled Reads
     subtitle:
       -
     titleColor:

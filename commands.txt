@@ -1,3 +1,5 @@
+hugo server
+
 hugo new articles/golang/functiontypes.md --buildDrafts
 
 hugo new tech/java_concurrency_in_practice/Introduction/_index.md --buildDrafts
