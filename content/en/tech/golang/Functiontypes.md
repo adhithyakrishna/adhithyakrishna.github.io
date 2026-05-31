@@ -13,7 +13,7 @@ Golang lets us declare a variable of type functions. In Golang functions are fir
 type validator func(*User) error
 ```
 
-Validator is the name of the variable that has a type function which takes the struct User as its argument and returns an error.
+`validator` is a function type that takes a pointer to a User struct as an argument and returns an error.
 #### Declaration of struct and functions on the struct
 
 ```Go
@@ -35,7 +35,7 @@ func (uv *userValidator) isEmpty(u *User) error {
 }
 ```
 
-If we observe, we can note that the function argument as well the return type matches the variable we declared above. Now we can pass validator as an argument to different functions and execute them. Below is an example.
+If we observe, the function arguments and return types match the `validator` type we declared above. Now we can pass `validator` as an argument to different functions and execute them. Below is an example:
 
 ```Go
 func runUserValidations(user *User, fns ...validator) error {
@@ -48,9 +48,9 @@ func runUserValidations(user *User, fns ...validator) error {
 }
 ```
 
-You can see that, validator is passed as an argument to the runUserValidations functions. The function can be executed by passing an instance of user struct as an argument.
+You can see that `validator` is passed as an argument to the `runUserValidations` function. The validator functions can be executed by passing an instance of the User struct as an argument.
 
-I have included an example below of how using function types will come in handy while doing multiple functions that validates if an email is valid.
+Below is an example demonstrating how function types are useful when performing multiple validation functions on an email address:
 
 ```Go
 package main
@@ -113,6 +113,6 @@ func main() {
 }
 ```
 
-If you note line number 52 in the above code you can see how an instance of user struct, initialized with an email is passed to different functions, validated and if there is an error in the validation it prints the error or it prints the email is valid.
+If you note lines 101-107 in the above code, you can see how an instance of the User struct, initialized with an email, is passed to different validator functions. If any validation fails, the error is printed; otherwise, a message indicating the email is valid is printed.
 
-We can included multiple such functions and calling them is a matter of including them to the runUserValidations functions.
+You can include multiple such validator functions, and calling them is simply a matter of including them in the arguments to the `runUserValidations` function.

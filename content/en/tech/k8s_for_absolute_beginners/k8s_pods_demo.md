@@ -9,12 +9,12 @@ weight : 35
 ---
 {{< featuredImage >}}
 
-This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
+These notes are for the course [Kubernetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 #### Application flow
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-30-15-48-51.png title="K8s Pods demo" caption="https://www.udemy.com/course/learn-kubernetes/" alt="K8s nodes" width="700px" position="center" >}}
 #### Voting application
 
-We create pods and expose the container port. Please note that all the docker images are pre-built and this demo is to understand how different microservices communicate with each other through k8s services.
+We create pods and expose the container port. Please note that all the Docker images are pre-built and this demo is to understand how different microservices communicate with each other through Kubernetes services.
 
 Create a definition for pod ``voting-app-pod.yml``
 ```
@@ -190,7 +190,7 @@ spec:
 ```
 #### Worker application
 
-Note that these pod is needed just for internal communication.
+Note that these pods are needed just for internal communication.
 
 Create a definition for a pod ``worker-app-pod.yml``
 ```

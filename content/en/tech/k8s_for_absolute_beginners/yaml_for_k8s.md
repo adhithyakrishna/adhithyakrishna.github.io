@@ -9,7 +9,7 @@ weight : 20
 ---
 {{< featuredImage >}}
 
-This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
+These notes are for the course [Kubernetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 
 #### Kubernetes definition file
 

@@ -7,4 +7,4 @@ collapsible: true
 weight: 1
 ---
 
-Contains Notes for the kubernetes course - https://www.udemy.com/course/learn-kubernetes/
+Contains notes for the Kubernetes course - https://www.udemy.com/course/learn-kubernetes/

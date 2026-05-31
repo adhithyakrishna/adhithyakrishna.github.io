@@ -41,7 +41,7 @@ func main() {
 	c.speak();
 }
 ```
-Now, Let us say, we work for a client who wants add a functionality. It may be something like, adding a prefix to the language spoken by the animal.
+Now, let's say we work for a client who wants to add a functionality. It may be something like adding a prefix to the language spoken by the animal.
 
 To do that, we can make use of the concept called interface chaining.
 
@@ -58,13 +58,13 @@ func (i Initiator) speak() {
 }
 ```
 
-Now Initiator struct implements the language interface. Since it includes, Language interface as one of its fields, chaining is very easy to do.
+Now the Initiator struct implements the Language interface. Since it includes the Language interface as one of its fields, chaining is very easy to do.
 ```Go
     c := Animal{Initiator{Cat{}}}
     c.speak()
 ```
 
-The Initiator functionality has been chained into the variable declaration. Now everytime a speak function is called on the intialised variable, first, the speak function in the initiator struct would be called and then, the speak function in the Cat struct would take place.
+The Initiator functionality has been chained into the variable declaration. Now every time a speak function is called on the initialized variable, the speak function in the Initiator struct is called first, and then the speak function in the Cat struct is called.
 
 
 Full code is given below:
@@ -112,7 +112,7 @@ func main() {
 }
 ```
 
-The output is 
+The output is:
 {{< boxmd >}}
 Woof
 The animal says : Meow

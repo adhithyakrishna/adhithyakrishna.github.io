@@ -14,7 +14,6 @@ type Animal struct {
 }
 
 type Dog struct {
-
 }
 
 func (d Dog) speak() {
@@ -23,18 +22,18 @@ func (d Dog) speak() {
 
 func main() {
 	d := Animal{Dog{}}
-	d.speak();
+	d.speak()
 
 	v := Animal{}
-	v.speak();
+	v.speak()
 }
 ```
 
-In the above code we declare a type of struct named Dog. There is a method embedded to the Dog struct called speak.
+In the above code, we declare a struct type named Dog. There is a method defined on the Dog struct called `speak`.
 
-We declare a new struct Animal, which has Dog as one of if its fields. Now, All the methods embedded on the struct Dog can be accessed by creating a variable for the struct type Animal (Line 14).
+We declare a new struct Animal, which has Dog as one of its fields. Now, all the methods defined on the Dog struct can be accessed by creating a variable of type Animal (line 25).
 
-Though this works fine, the problem here is, the struct Animal has a field Dog hard coded to it. Suppose we have to include a cat, we have to then alter the struct Animal to include cat. It doesnt end there, we'll also have to modify the variableinitializationn to include Cat. Now, since both dog and cat has the function speak we will have to explicitly specify which function are we intending to call. Code including cat is given below.
+Though this works fine, the problem is that the struct Animal has the Dog type hardcoded into it. If we want to include a Cat, we must alter the struct Animal to include Cat. It doesn't end there—we also have to modify the variable initialization to include Cat. Since both Dog and Cat have the `speak` method, we must explicitly specify which function we intend to call. Code including Cat is shown below:
 
 ```Go
 type Animal struct {
@@ -43,7 +42,6 @@ type Animal struct {
 }
 
 type Dog struct {
-
 }
 
 func (d Dog) speak() {
@@ -51,7 +49,6 @@ func (d Dog) speak() {
 }
 
 type Cat struct {
-
 }
 
 func (c Cat) speak() {
@@ -63,8 +60,7 @@ func main() {
 		Dog{},
 		Cat{},
 	}
-	d.Cat.speak();
-
+	d.Cat.speak()
 }
 ```
 
@@ -72,26 +68,27 @@ To make it easy for us to swap between different animals, or include multiple an
 
 ## Interfaces
 
-#### Step 1: Create a type of interface that encompasses the common functionalites.
+#### Step 1: Create a type of interface that encompasses the common functionalities
 
 ```Go
 type Language interface {
 	speak()
 }
 ```
-Now, any type that implements speak function is an implementation of the Language interface.
 
-#### Step 2: Create a type of struct Dog, and implement the functions of the interface.
+Now, any type that implements the `speak` method is an implementation of the Language interface.
+
+#### Step 2: Create a struct type Dog and implement the methods of the interface
 
 ```Go
-type Dog struct {}
+type Dog struct{}
 
 func (d Dog) speak() {
 	fmt.Println("Woof")
 }
 ```
 
-#### Step 3: Include the interface as a field to the Animal struct
+#### Step 3: Include the interface as a field in the Animal struct
 
 ```Go
 type Animal struct {
@@ -99,43 +96,45 @@ type Animal struct {
 }
 ```
 
-Now, any struct that implements the speak function can be initialized to the Language field during declaration. We need not disturb the Animal struct again.
+Now, any struct that implements the `speak` method can be assigned to the Language field during initialization. We don't need to modify the Animal struct again.
 
-Invoking the speak function for Dog is just a matter of initializing the variable with the struct Animal with any one of the implementations of the Language interface as below.
+Invoking the `speak` method for Dog is straightforward—just initialize the Animal variable with any implementation of the Language interface:
 
 ```Go
 d := Animal{Dog{}}
-d.speak();
+d.speak()
 ```
 
-Including a new animal is easy. All we have to do is, create a new struct (Ex. Cat), embed a function speak() to the struct.
+Including a new animal is easy. All we have to do is create a new struct (e.g., Cat) and implement the `speak()` method on it:
 
 ```Go
-type Cat struct {}
+type Cat struct{}
 
 func (d Cat) speak() {
-	fmt.Println("Woof")
+	fmt.Println("Meow")
 }
 ```
 
 The real world advantage to doing this is that, now any time we decide to replace a functionality, say, we have included some customer specific logic, it is as easy as swapping it with the new struct that implements the interface.
 
-Full code can be found below
+Full code can be found below:
 
 ```Go
+package main
+
 import "fmt"
 
 type Animal struct {
 	Language
 }
 
-type Dog struct {}
+type Dog struct{}
 
 func (d Dog) speak() {
 	fmt.Println("Woof")
 }
 
-type Cat struct {}
+type Cat struct{}
 
 func (d Cat) speak() {
 	fmt.Println("Meow")
@@ -147,16 +146,16 @@ type Language interface {
 
 func main() {
 	d := Animal{Dog{}}
-	d.speak();
+	d.speak()
 
 	c := Animal{Cat{}}
-	c.speak();
+	c.speak()
 }
 ```
 
-In line 23, Dog can be replaced by Cat and just by swapping, we can include functionality of cat instead of dog.
+In the main function (lines 27-32), Dog can be replaced by Cat, and by simply swapping the types, we can include Cat's functionality instead of Dog's.
 
-The output is 
+The output is:
 {{< boxmd >}}
 Woof
 Meow

@@ -9,10 +9,10 @@ weight : 30
 ---
 {{< featuredImage >}}
 
-This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
+These notes are for the course [Kubernetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 
-Kubernetes service enable communication between various components within or ourside of the application. Kubernetes Services helps us connect applications with other applications or users.
-Services enable connectivity between the group of pods. For example front-end to the users, connection between the frontend and backend processes and backend to to external data source.
+Kubernetes services enable communication between various components within or outside of the application. Kubernetes services help us connect applications with other applications or users.
+Services enable connectivity between groups of pods. For example, front-end to the users, connection between the frontend and backend processes, and backend to an external data source.
 Services enable **Loose coupling** between micro services in our application.
 
 #### Node Port
@@ -102,14 +102,14 @@ status:
     ingress:
     - ip: 192.0.2.127
 ```
-#### Differrence between different services
+#### Difference between different services
 
 https://stackoverflow.com/questions/41509439/whats-the-difference-between-clusterip-nodeport-and-loadbalancer-service-types
 
 Excerpts from the above stack overflow link
 
 {{< box >}}
-You can access a service from your load balancer's IP address, which routes your request to a nodePort, which in turn routes the request to the clusterIP port. You can acess this service as you would a NodePort or a ClusterIP service as well.
+You can access a service from your load balancer's IP address, which routes your request to a nodePort, which in turn routes the request to the clusterIP port. You can access this service as you would a NodePort or a ClusterIP service as well.
 {{< /box >}}
 A ClusterIP Service is part of a NodePort Service. A NodePort Service is Part of a Load Balancer Service.
 

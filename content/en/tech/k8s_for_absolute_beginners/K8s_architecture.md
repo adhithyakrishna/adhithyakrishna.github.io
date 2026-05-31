@@ -10,7 +10,7 @@ weight : 10
 
 {{< featuredImage >}}
 
-This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
+These notes are for the course [Kubernetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 #### Container orchestration
 
 Kubernetes is a Container Orchestration technology. Docker has its own container orchestration - docker swarm. There is also MESOS from Apache.
@@ -37,7 +37,7 @@ Cluster is a set of nodes grouped together. This way, even if one node fails, th
 Multiple nodes would help with sharing load as well.
 #### Master
 
-Master is another node with kubernetes installed in it and is configured as a master. The master watches over the nodes in the cluster and is responsible for the actual orchestraction of containers on the worker nodes.
+Master is another node with Kubernetes installed in it and is configured as a master. The master watches over the nodes in the cluster and is responsible for the actual orchestration of containers on the worker nodes.
 
 **Few responsibilities of master node**
 1) Responsible for managing the cluster.

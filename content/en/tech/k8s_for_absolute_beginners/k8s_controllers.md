@@ -9,7 +9,7 @@ weight : 25
 ---
 {{< featuredImage >}}
 
-This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
+These notes are for the course [Kubernetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 
 #### Replication controller
 1) Replication controller helps us run multiple instance of a pod in kubernetes cluster, thus providing high availability.
@@ -45,7 +45,7 @@ spec:
 #### Replica Set
 Replication controller that we saw previously is being replaced by replica set. Replica Set is the recommended way to setup replication. 
 One difference between Replication Controller and Replica Set is, Replica Set requires a selector definition to identify what pods fall under it. Replica Set will take those pods that are already deployed that match the selector definition when creating the replicas. 
-Replica Set can also be used to monitor the existing pods and redploy if one of them fails.
+Replica Set can also be used to monitor the existing pods and redeploy if one of them fails.
 Labeling our pods is essential because there may be hundreds of pods running in our cluster and we can use **labels and selectors** to identify the pods.
 If one of the pods fails, Replica Set will use the configuration under the _spec_ property to re-deploy the pod.
 ```
@@ -99,9 +99,9 @@ kubectl scale --replicas=6 replicaset myapp-replicaset
 
 Deployments have several interesting use cases which are listed in this page. https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 ##### Deployment lifecycle
-First the deployment is created.
-Deployment in turn creates the replicaset.
-Replica Set has in turn creates pods.
+First, the deployment is created.
+The deployment in turn creates the replicaset.
+The Replica Set in turn creates pods.
 **Kubectl describe deployment** command can be used to find more information about the deployment status.
 ```
 apiVersion: apps/v1

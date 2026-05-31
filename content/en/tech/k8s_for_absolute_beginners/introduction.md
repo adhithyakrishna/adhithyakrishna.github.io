@@ -10,7 +10,7 @@ weight : 5
 
 {{< featuredImage >}}
  
-This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
+These notes are for the course [Kubernetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 
 ## Introduction
 
@@ -26,7 +26,7 @@ Docker (most popular container technology).
 ##### Problems before containers
 1) Application component and services being incompatible with underlying OS.
 2) Compatibility between services, libraries and dependencies on the OS.
-3) Compatibility checks had to be make during every component upgrade AKA matrix from hell.
+3) Compatibility checks had to be made during every component upgrade AKA matrix from hell.
 4) On-boarding a new developer / setting up a local instance was difficult.
 
 ##### With docker
@@ -34,12 +34,12 @@ Docker (most popular container technology).
 2) Docker is compatible with any operating systems. 
 3) On-boarding a new developer / setting up a local instance is very easy.
 
-#### Os components and responsibilities
-All operating systems consists of two important components
+#### OS components and responsibilities
+All operating systems consist of two important components
 1) OS Kernel
 2) Software
 
-Os kernel is responsible for interacting with underlying hardware. Custom software differentiates operating systems from each other. **Docker container** shares the underlying kernel of docker host. Docker is not meant to virtualise and run different operating systems on the same hardware. The main purpose is to containerize and ship them.
+OS kernel is responsible for interacting with underlying hardware. Custom software differentiates operating systems from each other. **A Docker container** shares the underlying kernel of the Docker host. Docker is not meant to virtualise and run different operating systems on the same hardware. The main purpose is to containerize and ship them.
 #### Docker vs Virtual machines
 
 {{< img src=/tech/k8s_for_absolute_beginners/Clipboard_2022-10-23-12-05-47.png title="Containers vs Virtual Machine" caption="https://www.udemy.com/course/learn-kubernetes/" alt="container vs Vm" width="700px" position="center" >}}
@@ -58,7 +58,7 @@ Os kernel is responsible for interacting with underlying hardware. Custom softwa
 6) Dependencies
 7) Application
 
-The overhead causes higher utilization of underlying resources because there are multiple operating systems and kernel running. The Virtual machine is heavy and consume high disk space (Gigabytes) whereas Docker containers a re light weight and are usually mega bytes in size. 
+The overhead causes higher utilization of underlying resources because there are multiple operating systems and kernels running. Virtual machines are heavy and consume high disk space (Gigabytes) whereas Docker containers are lightweight and are usually megabytes in size. 
 
 Docker containers boot up faster (within seconds). VM takes minutes to boot up as it needs to boot up the entire OS.
 

@@ -9,7 +9,7 @@ weight : 15
 ---
 {{< featuredImage >}}
 
-This notes is for the course [Kuberenetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
+These notes are for the course [Kubernetes for absolute beginners](https://www.udemy.com/course/learn-kubernetes/)
 #### Yaml introduction
 According to yaml.org, **"YAML is a human-friendly, data serialization standard for all programming languages."**
 Yaml is used to create kubernetes configurations
@@ -25,7 +25,7 @@ Liquid: Water
 ```
 
 ##### Array/List
-Lists would have a name and a number of items listed under it. The elements of the list would start with a **-**. There can be a n of lists, however the indentation of various elements of the array matters a lot.
+Lists would have a name and a number of items listed under it. The elements of the list would start with a **-**. There can be a number of lists; however, the indentation of various elements of the array matters a lot.
 
 ```
 Fruits:
