@@ -30,7 +30,7 @@ disableKinds = ["taxonomyTerm"]
   [markup.tableOfContents]
     endLevel = 5
     ordered = false
-    startLevel = 4
+    startLevel = 1
 
 [outputs]
   home = ["HTML", "RSS", "SearchIndex"]
